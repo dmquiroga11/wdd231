@@ -9,11 +9,9 @@
     <meta name="description" content="WDD 231 -Web Frontend Development I. Diana Quiroga">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/indexlarge.css">
     <script src="scripts/index.js" defer></script>
 </head>
 
@@ -21,17 +19,21 @@
     <header>
         <div class="box1">
             <picture>
-                <source srcset="images/profilelarge.webp" media="(min-width:501px)">
-                <source srcset="images/profilesmall.webp" media="(min-width: 500px)">
+                <source srcset="images/profilelarge.webp" media="(min-width:800px)">
+                <source srcset="images/profilesmall.webp" media="(min-width: 450px)">
                 <img src="images/profilelarge.webp" alt="Profile Picture" class="imghead">
             </picture>
             <h1>Diana M. Quiroga</h1>
-        </div>
-        <nav class="nav1">
-            <a class="box2" href="">Home</a>
-            <a class="box2" href="">Chamber</a>
-            <a class="box2" href="">GitHub Profile</a>
-            <a class="box2" href="https://www.linkedin.com/in/diana-mera-angulo-73228327a/" target="_blank">LinkedIn</a>
+            <button id="openmenu" class="open">&#9776;</button>
+        </div>        
+        <nav class="nav1" id="nav">
+            <button id="closemenu" class="close">&times;</button>
+            <ul class="startlink">
+                <li><a class="box2" href="">Home</a></li>           
+                <li><a class="box2" href="">Chamber</a></li>
+                <li><a class="box2" href="">GitHub Profile</a></li>
+                <li><a class="box2" href="https://www.linkedin.com/in/diana-mera-angulo-73228327a/" target="_blank">LinkedIn</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -48,12 +50,13 @@
                 <h2>Popayan,Cauca</h2>
                 <figure>
                     <picture>
-                        <source srcset="images/Ermita.webp" media="(min-width:501px)">
-                        <source srcset="images/torresmall.webp" media="(min-width: 500px)">
+                        <source srcset="images/Ermita.webp" media="(min-width: 800px)">
+                        <source srcset="images/torresmall.webp" media="(min-width: 450px)">
                         <img src="images/Ermita.webp" alt="Popayan City" class="cityimg">
                     </picture>
-                    <figcaption>The Ermita,Popayan</figcaption>
+                    <figcaption>The Ermita, Popayan</figcaption>
                 </figure>
+                
 
 
 

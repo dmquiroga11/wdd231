@@ -1,0 +1,266 @@
+:root {
+    --font-family1: "Roboto", sans-serif;
+    --primary-color: rgb(3, 19, 88);
+    --secondary-color: rgb(250, 250, 252);
+    --tertiary-color: rgb(6, 0, 0);
+}
+
+
+@media screen  and (max-width:2000px){
+
+    .imghead {
+        width: 180px;
+        height: 200px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    h1 {
+        margin-left: 50px;
+        align-content: center;
+        font-family: var(--font-family1);
+        font-size: 60px;
+    }
+    /*CSS aplied to a of header*/
+        
+   
+    .open, .close{
+        display:none;
+    }
+    /* CSS aplied to secction of main*/
+h2 {
+    font-size: 30px;   
+    padding: 1rem;   
+    border-top: 20px;
+}
+.startlink{
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 2px;    
+    width: 1455px;   
+    height: 50px;
+    justify-content: center; 
+    background-color: var(--tertiary-color);    
+   
+ }
+ .box2{
+    position: relative;
+    margin: 110px;
+    top: 10px;
+ }
+.box3 {
+    display: flex;
+    justify-content: center;
+}
+
+.webbox {
+    width: 1450px;    
+}
+.sect1box3 {
+    
+    width: 900px;
+    height: 550px;
+    margin: 25px;
+}
+.sect2box3 {
+    
+    margin: 25px;
+    width: 500px;
+    height: 550px;
+}
+.sect2box3 {
+    
+    margin: 25px;
+    width: 500px;
+    height: 550px;
+}
+figcaption {
+    font-size: 20px;    
+    margin-top: 10px;
+}
+.cityimg {    
+    width: 400px;
+    height: 350px;
+    left: 2%;
+}
+li {
+    font-size: 25px;
+    margin-left: 20px;
+}
+.box4a {   
+    padding: 1rem;    
+    margin: 10px;
+    width: 100px;
+    height: 10px;
+    font-size: 20px;
+}
+.box5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+footer {    
+    height: 110px;    
+    font-size: 20px;
+    width: auto;
+    height: 150px;
+}
+.boxf {
+    font-size: 26px;
+}
+}
+
+/*---------------------------------- SMALL SCREEN!!!!------------------------------------------------------- */
+/*----------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 500px){
+
+    .imghead {
+        width: 90px;
+        height: 120px;
+        border-radius: 10px;
+        margin: 10px;
+        position: relative;       
+    }
+    h1 {
+        margin-right: 60px;             
+        font-size: 20px;      
+    }
+    /*CSS aplied to a of nav  header*/
+    
+    
+    .nav1 {        
+       display: none;        
+       position: absolute;
+       top: 0;
+       right: 1px;
+       width: 200px;        
+       height: auto;
+       /*background-color: var(--tertiary-color); */  
+       visibility: hidden;      
+    }
+    .nav1.visible {
+        display: grid;    
+        visibility: visible;
+        grid-template-columns: 1fr;
+        background-color:var(--tertiary-color);    
+    }
+    .startlink {
+        position: relative;
+        list-style-type: none; 
+        padding: 0;
+        margin: 0;    
+        width: 200px;
+        display: grid;
+        text-align: center;
+        height: 300px;
+        right: 20%;
+        
+        
+    }
+    li a{
+        margin-left:0;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 0.2rem;        
+        border: 0;
+        font-size: 4rem;
+        background-color: transparent;
+        color: var(--secondary-color);       
+    }
+    .open{
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 2rem;        
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        color: var(--secondary-color);
+    }
+
+    
+    
+    /* CSS aplied to secction of main*/
+h2 {
+    font-size: 20px;   
+    padding: 1rem;   
+    border-top: 20px;
+}
+.box2{
+    text-align: center;  
+    font-size: 20px;
+    margin:0;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 0.5rem;
+    
+}
+.box3 {
+    display: grid;
+    justify-content: center;    
+    margin: 0;
+    
+}
+
+.webbox {
+    width: 450px;    
+}
+.sect1box3 {    
+    width: 450px;
+    height: 200px;     
+}
+.sect2box3 {    
+    width: 450px;
+    height: 400px;
+   
+    
+}
+
+figcaption {
+    font-size: 20px;    
+    margin-top: 10px;
+}
+.cityimg {    
+    width: 250px;
+    height: 290px;
+    left: 15%;
+}
+li {
+    font-size: 25px;
+    margin-left: 20px;
+}
+.box4a {
+       
+    margin: 10px;
+    width: 100px;
+   
+    font-size: 20px;
+    margin-top: 0;
+   
+}
+.box5 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 10px;
+}
+.box5a {
+    width: 410px;
+    justify-content: center;
+    
+}
+footer {    
+    height: 110px;    
+    font-size: 18px;
+    width: auto;
+    height: 150px;
+}
+.boxf {
+    font-size: 24px;
+}
+}
