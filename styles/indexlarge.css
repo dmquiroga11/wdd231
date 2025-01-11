@@ -106,8 +106,23 @@ footer {
     width: auto;
     height: 150px;
 }
+.footimg{
+     position: relative;
+    top: 50%;
+}
 .boxf {
     font-size: 26px;
+}
+.box6{
+    display: flex;
+}
+.box7{
+    display: flex;
+}
+.creditp{
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--font-family1);
 }
 }
 
@@ -136,8 +151,7 @@ footer {
        top: 0;
        right: 1px;
        width: 200px;        
-       height: auto;
-       /*background-color: var(--tertiary-color); */  
+       height: auto;        
        visibility: hidden;      
     }
     .nav1.visible {
@@ -262,5 +276,28 @@ footer {
 }
 .boxf {
     font-size: 24px;
+}
+.box6{
+    display: grid;
+    justify-content: center;
+}
+.box7{
+    
+    justify-content: center;
+}
+.footimg{
+   
+    position: relative;
+    top: 35%;
+}
+p{
+    margin: 6px;
+    justify-content: center;    
+    text-align: center;
+}
+.creditp{
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--font-family1);
 }
 }
