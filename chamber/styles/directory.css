@@ -73,22 +73,7 @@ li{
     display:flex;    
 }
 
-.datacity1{ 
-    justify-self: right;
-    width: 520px;
-    height: 200px;
-    text-align: center;
-    margin: 7px;
-    border: 2px solid black;  
-    
-}
-.datacity2, .datacity3 {    
-    width: 320px;
-    height: 200px;
-    text-align: center;
-    margin: 7px;   
-    border: 2px solid black;
-}
+
 
 h2{
     display: flex;
