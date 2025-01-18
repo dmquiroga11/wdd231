@@ -23,7 +23,7 @@ close.addEventListener("click", () => {
 /*--------JSON WORK--------*/
 async function fetchMembers() {
     try {
-      const response = await fetch('https://github.com/dmquiroga11/wdd231/blob/main/chamber/data/members.json'); 
+      const response = await fetch('https://raw.githubusercontent.com/dmquiroga11/wdd231/main/chamber/data/members.json');
       const companies = await response.json();
       
       const membersContainer = document.getElementById('members');
@@ -38,11 +38,11 @@ async function fetchMembers() {
           </div>
           <hr>
           <div class="data">
+          <div>
+              <img src="images/business1.webp" alt="business1" class="busiimg">
+          </div>            
             <div>
-              <img src="path/to/images/${company.image}" alt="${company.name}" class="busiimg">
-            </div>
-            <div>
-              <p><strong>EMAIL:</strong> ${company.phone}</p>
+              <p><strong>EMAIL:</strong> ${company.email}</p>
               <p><strong>PHONE:</strong> ${company.phone}</p>
               <p><strong>URL:</strong> <a href="${company.website}" target="_blank">${company.website}</a></p>
             </div>
@@ -57,4 +57,5 @@ async function fetchMembers() {
   }
   
   fetchMembers();
+  
   
