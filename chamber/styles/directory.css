@@ -39,9 +39,18 @@ a{
     text-decoration: none; 
     font-family: var(--family-font1);   
 }
+.menu {	text-align: center;
+}
+.menu button {
+	padding: 0.5rem;
+	font-size: 25px;
+    margin: 10px;
+    font-family: var(--family-font1);
+}
 li{
     list-style-type: none;
 }
+
 .alink{
     color: var(--secondary-color);    
 }
@@ -54,8 +63,6 @@ li{
     color:aqua;
     font-family: var(--family-font1);
 }
-
-
 
 .busihead{
     text-align: center;   

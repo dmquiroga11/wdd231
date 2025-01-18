@@ -8,8 +8,6 @@
 
 
 @media screen  and (max-width:2000px){
-
-
 .open, .close{
     display:none;
 }
@@ -55,8 +53,8 @@
 .icon{
     width: 110px;
     height: 110px;
-    position: relative;
-    right: 36%;    
+    position: relative; 
+    left: 15%;       
 }
 .boxbusiness{
     width: 400px;
@@ -77,11 +75,57 @@
     width:150px ;
     
 }
-.box5{
-    width: 1200px;
-    display: grid;
+.grid { 
+    display: grid; 
+    gap: 10px; 
+    width: 1200px;    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
     justify-self: center;    
 }
+.list {
+	display: flex;
+	flex-direction: row;
+     
+   
+}
+.list .boxbusiness{
+    width: 1000px;
+    height: 100px;
+    justify-self: center;  
+    margin: 10px;
+   
+    
+}
+
+.list section {
+	display: flex;	
+	margin: 0;
+	padding: 0.25rem;   
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; 
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: var(--family-font1);
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+.list { 
+    display: block; 
+    width: 100%;   
+}
+
 .box3{
     width: 1200px;   
     justify-self: center;
@@ -102,6 +146,24 @@
     margin: 7px;   
     border: 2px solid black;
 }
+.currwhat{
+    display: flex;
+}
+.weather p{
+    position: relative;
+    left: 20%;
+    top:10%;
+    font-size: 15px;
+    font-family: var(--family-font1);
+    margin: 0;
+    width: 150px;
+   
+}
+.forecast{
+    font-size: 20px;
+    font-family: var(--family-font1);
+    
+}   
 }
 
 @media (min-width: 320px) and (max-width: 500px){
@@ -183,15 +245,38 @@
         height: 200px;
         text-align: center;
         margin: 5px;
-        border: 2px solid black;          
+        border: 2px solid black;                
         
     }
-    
-    
-    .box5{
-        display: grid;
-        justify-content: center;
+    .grid { 
+        display: grid; 
+        grid-template-columns: 1fr;
+        gap: 10px; 
+        width: 490px;        
+       justify-items: center;    
     }
+    .list .boxbusiness{
+        width: 450px;
+        height: 180px;
+        justify-self: center;  
+        margin: 10px;        
+    }
+    .weather p{
+        position: relative;
+        left: 20%;
+        top:10%;
+        font-size: 15px;
+        font-family: var(--family-font1);
+        margin: 0;
+        width: 150px;
+       
+    }
+    .forecast{
+        font-size: 20px;
+        font-family: var(--family-font1);
+        
+    }  
+   
     footer{
         display: grid;
         height: 400px;
