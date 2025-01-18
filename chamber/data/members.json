@@ -34,7 +34,7 @@
       "address": "Calle 18 an #7-29 - Barrio Ciudad Jardín, Popayán, Cauca",
       "email":"transportes@gmail.com",
       "phone": "310 6449380",
-      "website": "https://www.tentransportes.com",
+      "website": "https://www.transportes.com",
       "image": "https://raw.githubusercontent.com/dmquiroga11/wdd231/main/chamber/images/business2.webp",
       "membershipLevel": 2,
       "otherInfo": "Servicios de transporte especial."
@@ -54,7 +54,7 @@
       "address": "Cra. 3 #56-78, Popayán, Cauca",
       "email":"moda@gmail.com",
       "phone": "310 2345678",
-      "website": "https://www.boutiquedemoda.com",
+      "website": "https://www.moda.com",
       "image": "https://raw.githubusercontent.com/dmquiroga11/wdd231/main/chamber/images/business2.webp",
       "membershipLevel": 1,
       "otherInfo": "Moda sostenible y de tendencia."
@@ -64,7 +64,7 @@
       "email":"adurba@gmail.com",
       "address": "Cra. 7 #89-12, Popayán, Cauca",
       "phone": "310 3456789",
-      "website": "https://www.arquitecturaydiseño.com",
+      "website": "https://www.aydiseño.com",
       "image": "https://raw.githubusercontent.com/dmquiroga11/wdd231/main/chamber/images/business1.webp",
       "membershipLevel": 3,
       "otherInfo": "Innovación en diseño urbano."
