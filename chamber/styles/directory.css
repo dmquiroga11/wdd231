@@ -35,10 +35,15 @@ header{
     margin-left: 6px;
     color:var(--secondary-color)  
 }
-a{
+ul li a{
     text-decoration: none; 
     font-family: var(--family-font1);
-   
+    color: var(--secondary-color); 
+    background-color:var(--tertiary-color);   
+    font-size: 30px;
+    border-radius: 2px;
+  
+      
 }
 .menu {	text-align: center;
 }
@@ -49,13 +54,7 @@ a{
     font-family: var(--family-font1);
 }
 
-
-.alink{
-    color: var(--secondary-color); 
-    background-color: var(--tertiary-color); 
-  
-}
-.alink:hover{
+a:hover{
     color: rgb(69, 210, 249);
 }
 
