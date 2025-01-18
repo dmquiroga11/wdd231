@@ -23,7 +23,7 @@ close.addEventListener("click", () => {
 /*--------JSON WORK--------*/
 async function fetchMembers() {
     try {
-      const response = await fetch('members.json'); 
+      const response = await fetch('https://github.com/dmquiroga11/wdd231/blob/main/chamber/data/members.json'); 
       const companies = await response.json();
       
       const membersContainer = document.getElementById('members');
