@@ -37,7 +37,8 @@ header{
 }
 a{
     text-decoration: none; 
-    font-family: var(--family-font1);   
+    font-family: var(--family-font1);
+   
 }
 .menu {	text-align: center;
 }
@@ -47,12 +48,12 @@ a{
     margin: 10px;
     font-family: var(--family-font1);
 }
-li{
-    list-style-type: none;
-}
+
 
 .alink{
-    color: var(--secondary-color);    
+    color: var(--secondary-color); 
+    background-color: var(--tertiary-color); 
+  
 }
 .alink:hover{
     color: rgb(69, 210, 249);
