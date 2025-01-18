@@ -61,7 +61,27 @@
       "website": "https://www.aydiseño.com",      
       "membershipLevel": 3,
       "otherInfo": "Innovación en diseño urbano."
+    },
+    {
+      "name": "CaucaTech",
+      "email": "contacto@caucatech.com",
+      "address": "Avenida 2 #45-20, Popayán, Cauca",
+      "phone": "(602) 8354759",
+      "website": "https://www.caucatech.com",
+      "membershipLevel": 2,
+      "otherInfo": "Desarrollo de software y soluciones tecnológicas a medida."
+    },
+    {
+      "name": "InnovaWeb",
+      "email": "info@innovaweb.co",
+      "address": "Carrera 8 #12-30, Popayán, Cauca",
+      "phone": "(602) 8239654",
+      "website": "https://www.innovaweb.co",
+      "membershipLevel": 3,
+      "otherInfo": "Diseño y desarrollo de sitios web, marketing digital y consultoría en tecnología."
     }
+    
+    
   ]
   
   

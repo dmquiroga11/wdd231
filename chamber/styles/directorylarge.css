@@ -79,7 +79,7 @@
 }
 .box5{
     width: 1200px;
-    display: flex;
+    display: grid;
     justify-self: center;    
 }
 .box3{
