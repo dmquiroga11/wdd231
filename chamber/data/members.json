@@ -4,8 +4,7 @@
       "email":"efective@gmail.com",
       "address": "Cra. 10 #26C-18, Popayán, Cauca",
       "phone": "(602) 8241573",
-      "website": "https://www.efecty.com",
-      "image": "https://raw.githubusercontent.com/dmquiroga11/wdd231/main/chamber/images/business1.webp",
+      "website": "https://www.efecty.com",      
       "membershipLevel": 2,
       "otherInfo": "Empresa de telecomunicaciones y servicios."
     },
@@ -14,8 +13,7 @@
       "email":"edtc@gmail.com",
       "address": "Calle 4 #82 OF 105, Popayán, Cauca",
       "phone": "(602) 8241573",
-      "website": "https://www.emtel.com.co",
-      "image": "https://raw.githubusercontent.com/dmquiroga11/wdd231/main/chamber/images/business3.webp",
+      "website": "https://www.emtel.com.co",      
       "membershipLevel": 1,
       "otherInfo": "Consultoría informática y administración de instalaciones."
     },
@@ -24,8 +22,7 @@
       "email":"cordipopayan@gmail.com",
       "address": "Cra. 6 #7-83, Popayán, Cauca",
       "phone": "3127485476",
-      "website": "https://coordinadora.com",
-      "image": "https://raw.githubusercontent.com/dmquiroga11/wdd231/main/chamber/images/business1.webp",
+      "website": "https://coordinadora.com",      
       "membershipLevel": 3,
       "otherInfo": "Centro de coordinación y servicios."
     },
@@ -35,7 +32,6 @@
       "email":"transportes@gmail.com",
       "phone": "310 6449380",
       "website": "https://www.transportes.com",
-      "image": "https://raw.githubusercontent.com/dmquiroga11/wdd231/main/chamber/images/business2.webp",
       "membershipLevel": 2,
       "otherInfo": "Servicios de transporte especial."
     },
@@ -44,8 +40,7 @@
       "address": "Cra. 5 #12-34, Popayán, Cauca",
       "email":"lacima@gmail.com",
       "phone": "310 1234567",
-      "website": "https://www.lacima.com",
-      "image": "https://raw.githubusercontent.com/dmquiroga11/wdd231/main/chamber/images/business1.webp",
+      "website": "https://www.lacima.com",      
       "membershipLevel": 3,
       "otherInfo": "Gastronomía gourmet y experiencias culinarias."
     },
@@ -54,8 +49,7 @@
       "address": "Cra. 3 #56-78, Popayán, Cauca",
       "email":"moda@gmail.com",
       "phone": "310 2345678",
-      "website": "https://www.moda.com",
-      "image": "https://raw.githubusercontent.com/dmquiroga11/wdd231/main/chamber/images/business2.webp",
+      "website": "https://www.moda.com",      
       "membershipLevel": 1,
       "otherInfo": "Moda sostenible y de tendencia."
     },
@@ -64,8 +58,7 @@
       "email":"adurba@gmail.com",
       "address": "Cra. 7 #89-12, Popayán, Cauca",
       "phone": "310 3456789",
-      "website": "https://www.aydiseño.com",
-      "image": "https://raw.githubusercontent.com/dmquiroga11/wdd231/main/chamber/images/business1.webp",
+      "website": "https://www.aydiseño.com",      
       "membershipLevel": 3,
       "otherInfo": "Innovación en diseño urbano."
     }
