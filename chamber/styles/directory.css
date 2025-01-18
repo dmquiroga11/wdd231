@@ -29,6 +29,7 @@ header{
     height: 100px;
     margin-top: 10px;
     margin-left: 6px;
+    object-fit: cover;
 }
 .namecity{
     font-size: 30px;  
@@ -72,6 +73,7 @@ a:hover{
 .busiimg{    
     margin-left: 10px;
     margin-right: 10px;
+    object-fit: cover;
 }
 .data{
     display: flex;
@@ -113,6 +115,7 @@ h1{
     height: 70px;
     background-color: var(--secondary-color);
     border-radius: 50%;
+    object-fit: cover;
 }
 footer{
     display: flex;
