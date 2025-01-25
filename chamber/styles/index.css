@@ -1,0 +1,136 @@
+:root{
+    --primary-color:rgb(3, 19, 88);
+    --secondary-color:rgb(250, 250, 252);
+    --tertiary-color:rgb(6, 0, 0); 
+    --family-font1:"Roboto", sans-serif; 
+      
+}
+header{
+    display: flex;
+    background-color: var(--primary-color);
+}
+.box1{
+    display: flex;
+}
+.box2{
+    display: grid;  
+    align-items: center;
+    height: 120px;
+}
+.namepage{
+    position: relative;
+    margin-left: 6px;
+    bottom:40px;
+    color: var(--secondary-color);
+
+}
+.imghead{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 6px;
+    object-fit: cover;
+}
+.namecity{
+    font-size: 30px;  
+    margin-left: 6px;
+    color:var(--secondary-color)  
+}
+ul li a{
+    text-decoration: none; 
+    font-family: var(--family-font1);
+    color: var(--secondary-color); 
+    background-color:var(--tertiary-color);  
+    font-size: 30px;
+    border-radius: 2px;
+   
+  
+      
+}
+.menu {	text-align: center;
+}
+.menu button {
+	padding: 0.5rem;
+	font-size: 25px;
+    margin: 10px;
+    font-family: var(--family-font1);
+}
+
+a:hover{
+    color: rgb(69, 210, 249);
+}
+
+
+.button:hover{
+    color:rgb(255, 238, 0);
+    font-family: var(--family-font1);
+}
+
+.busihead{
+    text-align: center;   
+    color: var(--primary-color); 
+}
+
+.busiimg{    
+    margin-left: 10px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.data{
+    display: flex;
+}
+.box4{
+    display:flex;    
+}
+
+.datacity1{ 
+    justify-self: right;
+    width: 520px;
+    height: 200px;
+    text-align: center;
+    margin: 7px;
+    border: 2px solid black;  
+    
+}
+.datacity2, .datacity3 {    
+    width: 320px;
+    height: 200px;
+    text-align: center;
+    margin: 7px;   
+    border: 2px solid black;
+}
+
+h2{
+    display: flex;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0;
+    font-family: var(--family-font1);    
+}
+h1{
+    margin: 0;
+ 
+}
+.socialimg{
+    height: 70px ;
+    height: 70px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    object-fit: cover;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 17px;
+    height: 150px;
+    align-items: center;
+    font-family: var(--family-font1);
+   
+}
+footer p{
+    margin: 0;
+   
+
+}

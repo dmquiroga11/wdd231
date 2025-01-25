@@ -1,0 +1,333 @@
+:root{
+    --primary-color:rgb(3, 19, 88);
+    --secondary-color:rgb(250, 250, 252);
+    --tertiary-color:rgb(6, 0, 0); 
+    --family-font1:"Roboto", sans-serif; 
+    --quaternary-color:rgb(255, 77, 0);
+      
+}
+
+
+@media screen  and (max-width:2000px){
+.open, .close{
+    display:none;
+}
+.nav{
+    display: flex;   
+    height: 100px;
+    width: 1200px;  
+    align-content: center; 
+    
+}
+.startlink {
+    list-style-type: none;     
+    margin: 50px;    
+    width: 300px;
+    display: flex;
+    text-align: center;    
+    width: 1200px;
+    justify-content: end;    
+    gap:70px;
+    
+   
+   
+
+}
+.mainimg{
+    justify-self: center;
+    width: 1200px;
+    height: 600px;
+    display: grid;  
+    object-fit: cover;    
+    position: relative;
+   bottom: 150px;
+  
+}
+
+.button{
+    position: relative;
+    width: 400px;
+    height: 60px;
+    justify-self: center;
+    font-size: 30px;
+    bottom: 250px;   
+    border-radius: 10px;
+    color:var(--tertiary-color);
+    background-color: var(--quaternary-color);
+    font-family: var(--family-font1);
+}
+
+.icon{
+    width: 110px;
+    height: 110px;
+    position: relative; 
+    left: 15%;       
+}
+.boxbusiness{
+    width: 400px;
+    height:300px;    
+    color: var(--tertiary-color);
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(226, 251, 243);
+}
+.busihead{
+    text-align: center;
+    font-size: 20px; 
+    color: var(--primary-color); 
+}
+.busiimg{
+    height:130px ;
+    width:150px ;
+    object-fit: cover;
+    
+}
+.grid { 
+    display: grid; 
+    gap: 10px; 
+    width: 1200px;    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-self: center;    
+}
+.list {
+	display: flex;
+	flex-direction: row;
+     
+   
+}
+.list .boxbusiness{
+    width: 1000px;
+    height: 100px;
+    justify-self: center;  
+    margin: 10px;
+   
+    
+}
+
+.list section {
+	display: flex;	
+	margin: 0;
+	padding: 0.25rem;   
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; 
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: var(--family-font1);
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+.list { 
+    display: block; 
+    width: 100%;   
+}
+
+.box3{
+    width: 1200px;   
+    justify-self: center;
+}
+.datacity1{ 
+    justify-self: right;
+    width: 520px;
+    height: 200px;
+    text-align: center;
+    margin: 7px;
+    border: 2px solid black;  
+    
+}
+.datacity2, .datacity3 {    
+    width: 320px;
+    height: 200px;
+    text-align: center;
+    margin: 7px;   
+    border: 2px solid black;
+}
+.currwhat{
+    display: flex;
+}
+.weather p{
+    position: relative;
+    left: 20%;
+    top:10%;
+    font-size: 15px;
+    font-family: var(--family-font1);
+    margin: 0;
+    width: 150px;
+   
+}
+.forecast{
+    font-size: 20px;
+    font-family: var(--family-font1);
+    
+}   
+.par1{
+    font-size: 70px;
+    margin: 0;
+    text-align: center;
+    color:rgb(255, 183, 2);
+
+    text-shadow: 
+        1px 1px 0px black, 
+        -1px 1px 0px black, 
+        1px -1px 0px black, 
+        -1px -1px 0px black; 
+   
+
+
+}
+.par2{
+    font-size: 50px;
+   margin: 0;
+    text-align: center;
+    color:var(--quaternary-color);
+    text-shadow: 
+        1px 1px 0px black, 
+        -1px 1px 0px black, 
+        1px -1px 0px black, 
+        -1px -1px 0px black; 
+ 
+
+    }
+
+.paragraphs{
+    width: 1100px;
+    position: relative;
+    top: 270px; 
+    left: 5%; 
+    z-index: 10;    
+   
+   
+    
+}
+}
+
+@media (min-width: 320px) and (max-width: 500px){
+    .close {
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 0.2rem;        
+        border: 0;
+        font-size: 4rem;
+        background-color: transparent;
+        color: var(--secondary-color);       
+    }
+    .open{
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 2rem;        
+        border: 0;
+        font-size: 3rem;
+        background-color: transparent;
+        color: var(--secondary-color);
+    }
+    .nav {
+        display: none;        
+        position: absolute;
+        top: 0;
+        right: 3px;
+        width: 300px;        
+        height: 400px;       
+        visibility: hidden;
+    }
+    .nav.visible{
+
+        display: grid;    
+        visibility: visible;
+        grid-template-columns: 1fr;
+        background-color:var(--primary-color);
+        z-index: 10;  
+       
+    }
+    .button{        
+        font-size: 19px;
+        bottom: 70px;
+        right: 2%;        
+    }
+    .startlink {
+        list-style-type: none; 
+        padding: 0;
+        margin: 0;    
+        width: 200px;
+        display: grid;
+        text-align: center;
+    }
+    
+    .mainimg{
+        justify-self: center;
+        width:460px;
+        height: 200px;
+        display: grid; 
+        object-fit: cover;  
+    }
+    .box3{
+        display: grid;
+        width: 460px;
+        height: 800px;
+        justify-content: center;  
+              
+    }
+    .box4 { 
+        display: flex; 
+        flex-direction: column;
+         gap: 20px;      
+         
+    }
+   
+    .datacity1, .datacity2, .datacity3{ 
+        justify-self: right;
+        width: 400px;
+        height: 200px;
+        text-align: center;
+        margin: 5px;
+        border: 2px solid black;                
+        
+    }
+    .grid { 
+        display: grid; 
+        grid-template-columns: 1fr;
+        gap: 10px; 
+        width: 490px;        
+       justify-items: center;    
+    }
+    .list .boxbusiness{
+        width: 450px;
+        height: 180px;
+        justify-self: center;  
+        margin: 10px;        
+    }
+    .weather p{
+        position: relative;
+        left: 20%;
+        top:10%;
+        font-size: 15px;
+        font-family: var(--family-font1);
+        margin: 0;
+        width: 150px;
+       
+    }
+    .forecast{
+        font-size: 20px;
+        font-family: var(--family-font1);
+        
+    }  
+   
+    footer{
+        display: grid;
+        height: 400px;
+    }
+   
+}
