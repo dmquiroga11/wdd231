@@ -379,7 +379,7 @@ h3{
         visibility: visible;
         grid-template-columns: 1fr;
         background-color:var(--primary-color);
-        z-index: 10;  
+        z-index: 20;
        
     }
     .button{        
