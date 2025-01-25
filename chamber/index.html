@@ -66,38 +66,70 @@
             
             <div class="box3">
                 <h1>Home</h1>
-                <section > 
-                    <div class="box4">
-                        <div class="datacity1">
-                            <h2 >Events</h2>
-                        </div>
-                        <div class="datacity2">
-                            <h2 >Current Weather</h2>
-                            <div class="currwhat">                                
-                            <img  class="icon" src="images/sunny_icon.webp" alt="Cloud sun icon">
+                <div class="weathernow">
+                    <div class="datacity2">
+                        <h2>Current Weather</h2>
+                        <div class="currwhat">                                
+                            <img class="icon" src="images/sunny_icon.webp" alt="Cloud sun icon">
                             <div class="weather">
-                                <p>62°F</p>
-                                <p>Cloudy</p>
-                                <p>High:81°</p>
-                                <p>Low:23°</p>
-                                <p>Humility:59%</p>
-                                <p>Sunrise:6:17 am</p>
-                                <p>Sunset:6:17 pm</p>
-                            </div>
-                            </div>
-                        </div>
-                        <div  class="datacity3">
-                            <h2>Weather Forecast</h2>
-                            <div class="forecast">
-                                <p>Today:71°F</p>
-                                <p>Suday: 74°F</p>
-                                <p>Monday:76°F</p>
+                                <p id="currentTemp"></p>
+                                <p id="currentDescription"></p>
+                                <p id="highTemp"></p>
+                                <p id="lowTemp"></p>
+                                <p id="humidity"></p>
+                                <p id="sunrise"></p>
+                                <p id="sunset"></p>
                             </div>
                         </div>
                     </div>
+                    <div class="datacity3">
+                        <h2>Weather Forecast</h2>
+                        <div class="forecast" id="forecast">
+                            <p id="day1"></p>
+                            <p id="day2"></p>
+                            <p id="day3"></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+                <section > 
+                    <div class="box4">
+                        <div class="datacity1">
+                            <h2>Events</h2>
+                            <section>                               
+                                <div class="event1">
+                                    <img src="images/event.webp" alt="imgevent">
+                                    <div  class="eventp" >
+                                        <h3>Popayán Business Expo 2025</h3>
+                                        <p><strong>Date: 15-17, 2025</strong> </p>
+                                        <p>A three-day expo showcasing local businesses, products, and services. Entrepreneurs and business owners have the opportunity to network, share ideas, and discover new market trends.</p>
+                                    </div>
+                                </div>
+                                <div class="event1">
+                                    <img src="images/event.webp" alt="imgevent">
+                                    <div class="eventp">
+                                        <h3>Innovate Popayán: Tech & Startups Summit</h3>
+                                        <p> <strong>Date: 10-11, 2025</strong></p>
+                                        <p>This summit brings together tech enthusiasts, startup founders, and investors to discuss the latest advancements in technology and innovation. Attendees can participate in workshops, panel discussions, and pitch competitions.</p>
+                                    </div>
+                                </div>
+                                <div class="event1">
+                                    <img src="images/event.webp" alt="imgevent">
+                                    <div class="eventp">
+                                        <h3>Sustainable Business Conference</h3>
+                                        <p><strong>Date: June 20, 2025</strong></p>
+                                        <p>A conference focused on sustainable business practices and environmental responsibility. Industry leaders and sustainability experts will share insights on how to implement eco-friendly strategies in various sectors.</p>
+                                    </div>
+                                    
+                                </div>    
+                            </section>
+                        </div>                        
+                        
                 </section>
             </div>      
         <section>
+            <h2 class="levels">Membership Levels</h2>
             <div class="menu">
                 <button id="grid">⏹️Grid</button>
                 <button  id="list">📄List</button>
@@ -106,6 +138,7 @@
             <div id="members"> </div>
             </article>           
         </section>
+        
     </main>
     <footer>
         <div>

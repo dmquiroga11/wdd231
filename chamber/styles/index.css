@@ -48,6 +48,7 @@ ul li a{
       
 }
 .menu {	text-align: center;
+    
 }
 .menu button {
 	padding: 0.5rem;
@@ -80,7 +81,7 @@ a:hover{
     display: flex;
 }
 .box4{
-    display:flex;    
+    display:grid;    
 }
 
 .datacity1{ 
@@ -105,10 +106,29 @@ h2{
     background-color: var(--primary-color);
     color: var(--secondary-color);
     margin: 0;
-    font-family: var(--family-font1);    
+    font-family: var(--family-font1);
+   
+
 }
 h1{
     margin: 0;
+    width: 1200px;
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--primary-color);
+    height: 100px;
+    align-content: center;
+    color: var(--secondary-color);
+    text-shadow: 
+        3px 3px 0px black, 
+        -3px 3px 0px black, 
+        3px -3px 0px black, 
+        -3px -3px 0px black; 
+   
  
 }
 .socialimg{
@@ -127,6 +147,7 @@ footer{
     height: 150px;
     align-items: center;
     font-family: var(--family-font1);
+    margin-top: 20px;
    
 }
 footer p{
