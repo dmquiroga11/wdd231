@@ -55,6 +55,9 @@
     color:var(--tertiary-color);
     background-color: var(--quaternary-color);
     font-family: var(--family-font1);
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
 }
 
 .icon{
