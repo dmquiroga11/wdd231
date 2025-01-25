@@ -12,11 +12,7 @@ header{
 .box1{
     display: flex;
 }
-.box2{
-    display: grid;  
-    align-items: center;
-    height: 120px;
-}
+
 .namepage{
     position: relative;
     margin-left: 6px;
@@ -36,31 +32,14 @@ header{
     margin-left: 6px;
     color:var(--secondary-color)  
 }
-ul li a{
-    text-decoration: none; 
-    font-family: var(--family-font1);
-    color: var(--secondary-color); 
-    background-color:var(--tertiary-color);  
-    font-size: 30px;
-    border-radius: 2px;
-   
-  
-      
-}
+
 .menu {	text-align: center;
     
-}
-.menu button {
-	padding: 0.5rem;
-	font-size: 25px;
-    margin: 10px;
-    font-family: var(--family-font1);
 }
 
 a:hover{
     color: rgb(69, 210, 249);
 }
-
 
 .button:hover{
     color:rgb(255, 238, 0);
@@ -84,53 +63,14 @@ a:hover{
     display:grid;    
 }
 
-.datacity1{ 
-    justify-self: right;
-    width: 520px;
-    height: 200px;
-    text-align: center;
-    margin: 7px;
-    border: 2px solid black;  
-    
-}
-.datacity2, .datacity3 {    
-    width: 320px;
-    height: 200px;
-    text-align: center;
-    margin: 7px;   
-    border: 2px solid black;
-}
-
 h2{
     display: flex;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     margin: 0;
     font-family: var(--family-font1);
-   
+}
 
-}
-h1{
-    margin: 0;
-    width: 1200px;
-    justify-self: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: var(--primary-color);
-    height: 100px;
-    align-content: center;
-    color: var(--secondary-color);
-    text-shadow: 
-        3px 3px 0px black, 
-        -3px 3px 0px black, 
-        3px -3px 0px black, 
-        -3px -3px 0px black; 
-   
- 
-}
 .socialimg{
     height: 70px ;
     height: 70px;
