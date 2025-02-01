@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership Page</title>
+    <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <title>Join Chamber</title>
     <meta name="author" content="Diana Quiroga"> 
     <meta name="description" content="WDD 231 - Activity practice Week 02. Diana Quiroga">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -21,7 +22,7 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://dmquiroga11.github.io/wdd231/chamber/directory.html" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website">
     <meta property="fb:app_id" content="1122930076232350" />    
 
     <!-- Twitter -->
@@ -87,13 +88,13 @@
                   
                     <div class="membapli">
                       <label for="organization"><strong>Organization Name:</strong></label>
-                      <textarea id="organization" name="organization" required autocomplete="organization"></textarea><br><br>
+                      <input type="text" id="organization" name="organization" required autocomplete="organization"></input><br><br>
                     </div>
                   
                     <div class="membapli">
                       <label for="level"><strong>Membership Level:</strong></label>
                       <select id="level" name="level" required>
-                        <option value="choose">Choose one...</option>
+                        <option value="">Choose one...</option>
                         <option value="gold">Gold Membership</option>
                         <option value="silver">Silver Membership</option>
                         <option value="bronze">Bronze Membership</option>
@@ -133,12 +134,10 @@
                 <div class="card">                    
                     <h2 class="npname" >NP Membership</h2>
                     <a href="#np-modal" class="modal-link">Learn More</a>
-                <div>
+                </div>
 
                   
-            </div>
-
-            
+            </div>        
         </div>
 
         <dialog id="gold-modal">
