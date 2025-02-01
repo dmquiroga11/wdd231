@@ -23,6 +23,7 @@ header{
     margin-left: 6px;
     bottom:40px;
     color: var(--secondary-color);
+    background-color: var(--tertiary-color);
 
 }
 .imghead{
