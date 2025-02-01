@@ -7,12 +7,21 @@
 
 
 @media screen  and (max-width:2000px){
-
+/*Se intento poner una animation pero no funciono*/
     .imghead {
         width: 180px;
         height: 200px;
         border-radius: 10px;
         margin: 10px;
+        animation: reverse 4s infinite;
+    }
+    @keyframes reverse {
+        from {
+            transform: rotate(10deg);
+        }
+        to {
+            transform: rotate(300deg);
+        }
     }
     h1 {
         margin-left: 50px;

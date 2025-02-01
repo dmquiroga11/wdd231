@@ -1,0 +1,423 @@
+:root{
+    --primary-color:rgb(20, 1, 45);
+    --secondary-color:rgb(250, 250, 252);
+    --tertiary-color:rgb(6, 0, 0); 
+    --family-font1:"Roboto", sans-serif; 
+    --quaternary-color:rgb(17, 167, 254);
+      
+}
+
+
+@media screen  and (max-width:2000px){
+.open, .close{
+    display:none;
+}
+h1{
+    margin: 0;
+    width: 100%;
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--primary-color);
+    height: 100px;
+    align-content: center;
+    color: var(--secondary-color);
+    text-shadow: 
+        3px 3px 0px black, 
+        -3px 3px 0px black, 
+        3px -3px 0px black, 
+        -3px -3px 0px black;   
+ 
+}
+
+h2{
+    display: flex;    
+    color: var(--tertiary-color);
+    margin: 0;
+    font-family: var(--family-font1); 
+    margin-bottom: 30px;     
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.5); 
+    position: relative;   
+    left: 5%;
+    top: 5px;
+}
+
+ul li a{
+    text-decoration: none; 
+    font-family: var(--family-font1);
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);       
+    font-size: 30px;
+    border-radius: 2px;     
+}
+.menu button {
+	padding: 0.5rem;
+	font-size: 25px;
+    margin: 10px;
+    font-family: var(--family-font1);
+}
+.box2{
+    display: grid;  
+    align-items: center;
+    height: 120px;
+}
+.nav{
+    display: flex;   
+    height: 100px;
+    width: 1200px;  
+    align-content: center; 
+    
+}
+.startlink {
+    list-style-type: none;     
+    margin: 50px;    
+    width: 300px;
+    display: flex;
+    text-align: center;    
+    width: 1200px;
+    justify-content: end;    
+    gap:70px;
+
+}
+.modal-link{    
+    font-size: 25px;   
+
+}
+.modal-link:hover{
+    background-color:var(--quaternary-color);
+    color: var(--tertiary-color);
+
+}
+.mainimg{
+    justify-self: center;
+    width: 1200px;
+    height: 600px;
+    display: grid;  
+    object-fit: cover;    
+    position: relative;
+   bottom: 150px;
+  
+}
+
+
+.icon{
+    width: 110px;
+    height: 110px;
+    position: relative; 
+    left: 15%;       
+}
+/*-----------------------------------MAIN-------------------------------*/
+.formname{
+
+    width: 480px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.5);
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+     justify-content: center;
+     font-size: 50px;
+
+}
+.principal{
+    display: flex;    
+    justify-content: space-around;
+   
+}
+form{
+    width: 520px;
+    height: 1400px;
+    font-size: 20px;
+   position: relative; 
+}
+input{
+    width: 80%;
+    padding: 0.5rem;
+    background-color: rgb(237, 238, 240);
+   
+}
+
+textarea{
+    width: 82%;
+    background-color:rgb(237, 238, 240);
+}
+select{
+    background-color: rgb(237, 238, 240);
+}
+
+.textarea1{
+    height: 300px;
+}
+.membapli{
+    justify-content: center;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    
+}
+.button{
+    position: relative;
+    left:10%;
+    background-color: rgb(205, 227, 255);
+    font-size: 25px;
+
+}
+.cards{
+    align-self: center;    
+    width: 600px;   
+   
+}
+.card{
+    
+    justify-content: space-around;
+    margin:50px;
+    height: 140px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+.goldname{
+    position: relative;
+    left: 10%;
+    
+}
+
+.npname{
+   position: relative;
+   left: 15%;
+   
+    
+}
+dialog{
+   width: 420px;
+}
+dialog p{
+    font-size: 25px;
+}
+.modal-button{
+    font-size: 25px;
+    position: relative;
+    left:40%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);    
+}
+
+.membapli label{
+    font-size: 25px;
+    color: var(--primary-color);
+    margin: 0;
+   
+    
+}
+
+
+
+
+
+
+}
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 500px){
+    h1{
+        margin: 0;
+        width: 100%;
+        justify-self: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 20px;            
+        height: 50px;
+        align-content: center;
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        text-shadow: none;
+           
+    }
+    .menu button {
+        padding: 0.5rem;
+        font-size: 25px;
+        margin: 10px;
+        font-family: var(--family-font1);
+       
+    }
+    .box2{
+        display: grid;  
+        align-items: center;
+        height: 120px;
+        
+    }
+   
+    .close {
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 0.2rem;        
+        border: 0;
+        font-size: 4rem;
+        background-color: transparent;
+        color: var(--secondary-color);       
+    }
+    .open{
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 2rem;        
+        border: 0;
+        font-size: 3rem;
+        background-color: transparent;
+        color: var(--secondary-color);
+    }
+    .nav {
+        display: none;        
+        position: absolute;
+        top: 0;
+        right: 3px;
+        width: 300px;        
+        height: 400px;       
+        visibility: hidden;
+    }
+    .nav.visible{
+
+        display: grid;    
+        visibility: visible;
+        grid-template-columns: 1fr;
+        background-color:var(--primary-color);
+        z-index: 20;
+       
+    }
+    .button{        
+        font-size: 20px;
+        bottom: 90px;
+        right: 5%;   
+        width: 200px;  
+        height: 35px; 
+       
+    }
+    .startlink {
+        list-style-type: none; 
+        padding: 0;
+        margin: 0;    
+        width: 200px;
+        display: grid;
+        text-align: center;
+    }
+    
+    .mainimg{
+        justify-self: center;
+        width:100%;
+        height: 200px;
+        display: grid; 
+        object-fit: cover;
+        position: relative; 
+        bottom: 50px; 
+    }
+    body{
+        margin:0;
+        padding: 0;
+    }
+
+    .textarea1{
+        width: 100%;
+        height: 300px;
+        
+    }
+    .formname{
+
+        width: 300px;
+        text-align: center;
+        text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.5);
+        background-color: var(--secondary-color);
+        color: var(--tertiary-color);
+         justify-content: center;
+         font-size: 30px;
+    
+    }
+   
+    
+    footer{
+        display: grid;
+        height: 400px;
+    }
+    /*--------------------------MAIN----------------------------*/
+    h2{
+        font-size: 40px;
+
+    }
+    .principal{
+        display: grid;    
+        justify-content: space-around;
+
+    }
+    form{
+        width: 300px;
+        height: 1120px;
+        border: solid black;
+        padding: 2rem;
+        font-size: 18px;
+       
+    }
+    input{
+        width: 100%;
+        padding: 0.2rem;
+    } 
+    .cards{
+        width: 320px;
+    }
+   textarea{
+     width: 300px;
+    }
+    .button{
+        position: relative;
+        bottom: 10px;
+        left:17%;
+        background-color: rgb(205, 227, 255);
+    
+    }
+    .membapli{       
+        margin-left: 2px;
+        margin-bottom: 10px;
+        
+    }
+    dialog{
+        width: 320px;
+     }
+     dialog p{
+         font-size: 20px;
+     }
+     .modal-button{
+         font-size: 20px;
+         position: relative;
+         left:40%;
+         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+         
+     }
+     .card{
+        width: 320px;
+        height: 170px;
+     }
+     .goldname{
+        position: relative;
+        left: 1%;
+        padding: 0.1rem;
+        
+    }
+    
+    .npname{
+       position: relative;
+       left: 5%;
+       padding: 1rem;
+       margin:0;
+       
+        
+    }
+
+    .modal-link{        
+        font-size: 20px;       
+    
+    }
+
+    }

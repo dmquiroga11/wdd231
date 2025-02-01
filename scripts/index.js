@@ -104,16 +104,17 @@ const courses = [
     }
 ]
 
-const completedCourseNumbers = [110, 130, 231,210];
+
+
+const completedCourseNumbers = [110, 130, 231, 210];
 completedCourseNumbers.forEach(courseNumber => {
     const course = courses.find(c => c.number === courseNumber);
     if (course) {
         course.completed = true;
     }
 });
-console.log(courses);
 
-const displayCourses = (filter = null) => {
+function displayCourses(filter = null) {
     const container = document.querySelector('#courses-container');
     container.innerHTML = ''; 
 
@@ -126,16 +127,43 @@ const displayCourses = (filter = null) => {
         courseLink.className = `box5a colbox ${course.completed ? 'completed' : 'not-completed'}`;
         courseLink.href = '#'; 
         courseLink.innerHTML = `<strong>${course.subject} ${course.number}</strong>`;
-
+        courseLink.addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenir el comportamiento por defecto del enlace
+            mostrarDetalles(course);
+        });
         container.appendChild(courseLink);
         
         totalCredits += course.credits;
     });
 
     document.querySelector('#total-credits').textContent = `Total Credits: ${totalCredits}`;
-};
+}
 
-displayCourses();
+function mostrarDetalles(course) {
+    const dialog = document.getElementById('course-details');
+    document.getElementById('course-name').textContent = course.title;
+    document.getElementById('tittle').textContent = `Título: ${course.title}`;
+    document.getElementById('credits').textContent = `Créditos: ${course.credits}`;
+    document.getElementById('certificate').textContent = `Certificado: ${course.certificate}`;
+    document.getElementById('description').textContent = `Descripción: ${course.description}`;
+    document.getElementById('technology').textContent = `Tecnología: ${course.technology.join(', ')}`;
+    dialog.showModal();
+}
+
+document.getElementById('close').addEventListener('click', () => {
+    document.getElementById('course-details').close();
+});
+
 document.querySelector('#show-all').addEventListener('click', () => displayCourses());
 document.querySelector('#show-cse').addEventListener('click', () => displayCourses('CSE'));
 document.querySelector('#show-wdd').addEventListener('click', () => displayCourses('WDD'));
+
+displayCourses();
+
+
+
+
+       
+   
+
+
