@@ -24,51 +24,86 @@ function updateTime() {
 document.addEventListener("DOMContentLoaded", async () => {
     const url = "https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/chamber/data/items.json";
     const cards = document.querySelector("#cards");
-
-    async function getitems() {
-        let response = await fetch(url);
-        let data = await response.json();
-        displayItems(data);
+    
+    if (cards) {
+        console.log("Element #cards found:", cards); 
+    } else {
+        console.error("Element #cards not found");
+        return; 
     }
 
-    getitems();
+    async function getItems() {
+        try {
+            console.log("Sending request to URL:", url); 
+            let response = await fetch(url);
+            console.log("Fetch response received:", response); 
+            if (!response.ok) {
+                throw new Error(`Error fetching JSON: ${response.status}`);
+            }
+            let data = await response.json();
+            
+            displayItems(data);
+        } catch (error) {
+            console.error("Error loading JSON:", error); 
+        }
+    }
+
+    getItems();
 
     const displayItems = (data) => {
+        
         for (let key in data) {
             if (data.hasOwnProperty(key)) {
                 let item = data[key];
+                console.log("Item:", item); 
 
                 /* Card creation */
                 const card = document.createElement("section");
-                card.setAttribute("id", "card");
+                card.classList.add("card");
 
-                /* Name creation */
-                const name = document.createElement("h2");
-                name.setAttribute("id", "itemName");
-                name.textContent = item.Name;
+                /* Title creation */
+                const title = document.createElement("h2");
+                title.classList.add("itemName");
+                title.textContent = item.Name;
+
+                /* Figure creation for Image */
+                const figure = document.createElement("figure");
+
+                const image = document.createElement("img");
+                image.setAttribute("src", item.Image);
+                image.setAttribute("alt", `Image of ${item.Name}`);
+                image.setAttribute("loading", "lazy");
+
+                figure.appendChild(image);
 
                 /* Address creation */
-                const address = document.createElement("p");
-                address.setAttribute("id", "itemAddress");
+                const address = document.createElement("address");
+                address.classList.add("itemAddress");
                 address.textContent = item.Address;
 
                 /* Description creation */
                 const description = document.createElement("p");
-                description.setAttribute("id", "itemDescription");
+                description.classList.add("itemDescription");
                 description.textContent = item.Description;
 
-                /* Image creation */
-                const image = document.createElement("img");
-                image.setAttribute("src", item.Image);
-                image.setAttribute("alt", `image of ${item.Name}`);
-                image.setAttribute("loading", "lazy");
+                /* Learn More Button creation */
+                const button = document.createElement("button");
+                button.textContent = "Learn More";
+                button.addEventListener("click", () => {
+                    alert(`More information about ${item.Name}`);
+                });
 
                 /* Append elements to card */
-                card.appendChild(name);
+                card.appendChild(title);
+                card.appendChild(figure);
                 card.appendChild(address);
                 card.appendChild(description);
-                card.appendChild(image);
-                cards.appendChild(card); // Agregar la tarjeta al contenedor correcto
+                card.appendChild(button);
+
+                console.log("Card created:", card); 
+
+                cards.appendChild(card); 
+                console.log("Card added to the #cards container"); 
             }
         }
     }
