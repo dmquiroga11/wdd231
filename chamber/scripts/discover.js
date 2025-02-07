@@ -21,17 +21,16 @@ function updateTime() {
     currentTime.textContent = now.toLocaleTimeString();
 }
 /*-----------------------CARDS----------------*/
-const container = document.getElementById("cards")
-
 async function fetchData() {
-    const url = 'https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/chamber/data/items.json';
-  
+    const url = 'https://raw.githubusercontent.com/dmquiroga11/wdd231/main/chamber/data/items.json';
+    
     try {
       const response = await fetch(url);
       if (!response.ok) {
         throw new Error('Network response was not ok ' + response.statusText);
       }
       const data = await response.json();
+      console.log("Data fetched successfully:", data);
       createCards(data);
     } catch (error) {
       console.error('There was a problem with the fetch operation:', error);
@@ -40,9 +39,11 @@ async function fetchData() {
   
   function createCards(data) {
     const container = document.getElementById('cards');
+    console.log("Creating cards for container:", container); 
     
     Object.keys(data).forEach(key => {
       const item = data[key];
+      console.log("Creating card for item:", item); 
       
       const card = document.createElement('div');
       card.className = 'card';
@@ -63,7 +64,7 @@ async function fetchData() {
       description.textContent = item.Description;
   
       const button = document.createElement('button');
-      button.textContent = 'learn more';
+      button.textContent = 'aprender más';
   
       card.appendChild(h2);
       card.appendChild(figure);
@@ -72,8 +73,8 @@ async function fetchData() {
       card.appendChild(button);
       container.appendChild(card);
     });
-  }  
- 
+  }
+  
   fetchData();
   
   
