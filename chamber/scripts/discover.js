@@ -20,3 +20,5 @@ function updateTime() {
     const now = new Date();
     currentTime.textContent = now.toLocaleTimeString();
 }
+/*-----------------------CARDS----------------*/
+const container = document.getElementById("cards")
