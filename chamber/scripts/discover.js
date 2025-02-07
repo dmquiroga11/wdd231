@@ -21,60 +21,55 @@ function updateTime() {
     currentTime.textContent = now.toLocaleTimeString();
 }
 /*-----------------------CARDS----------------*/
-async function fetchData() {
-    const url = 'https://raw.githubusercontent.com/dmquiroga11/wdd231/main/chamber/data/items.json';
-    
-    try {
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error('Network response was not ok ' + response.statusText);
-      }
-      const data = await response.json();
-      console.log("Data fetched successfully:", data);
-      createCards(data);
-    } catch (error) {
-      console.error('There was a problem with the fetch operation:', error);
+document.addEventListener("DOMContentLoaded", async () => {
+    const url = "https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/chamber/data/items.json";
+    const cards = document.querySelector("#cards");
+
+    async function getitems() {
+        let response = await fetch(url);
+        let data = await response.json();
+        displayItems(data);
     }
-  }
-  
-  function createCards(data) {
-    const container = document.getElementById('cards');
-    console.log("Creating cards for container:", container); 
-    
-    Object.keys(data).forEach(key => {
-      const item = data[key];
-      console.log("Creating card for item:", item); 
-      
-      const card = document.createElement('div');
-      card.className = 'card';
-  
-      const h2 = document.createElement('h2');
-      h2.textContent = item.Name;
-  
-      const figure = document.createElement('figure');
-      const img = document.createElement('img');
-      img.src = item.Image;
-      img.alt = item.Name;
-      figure.appendChild(img);
-  
-      const address = document.createElement('address');
-      address.textContent = item.Address;
-  
-      const description = document.createElement('p');
-      description.textContent = item.Description;
-  
-      const button = document.createElement('button');
-      button.textContent = 'aprender más';
-  
-      card.appendChild(h2);
-      card.appendChild(figure);
-      card.appendChild(address);
-      card.appendChild(description);
-      card.appendChild(button);
-      container.appendChild(card);
-    });
-  }
-  
-  fetchData();
-  
-  
+
+    getitems();
+
+    const displayItems = (data) => {
+        for (let key in data) {
+            if (data.hasOwnProperty(key)) {
+                let item = data[key];
+
+                /* Card creation */
+                const card = document.createElement("section");
+                card.setAttribute("id", "card");
+
+                /* Name creation */
+                const name = document.createElement("h2");
+                name.setAttribute("id", "itemName");
+                name.textContent = item.Name;
+
+                /* Address creation */
+                const address = document.createElement("p");
+                address.setAttribute("id", "itemAddress");
+                address.textContent = item.Address;
+
+                /* Description creation */
+                const description = document.createElement("p");
+                description.setAttribute("id", "itemDescription");
+                description.textContent = item.Description;
+
+                /* Image creation */
+                const image = document.createElement("img");
+                image.setAttribute("src", item.Image);
+                image.setAttribute("alt", `image of ${item.Name}`);
+                image.setAttribute("loading", "lazy");
+
+                /* Append elements to card */
+                card.appendChild(name);
+                card.appendChild(address);
+                card.appendChild(description);
+                card.appendChild(image);
+                cards.appendChild(card); // Agregar la tarjeta al contenedor correcto
+            }
+        }
+    }
+});
