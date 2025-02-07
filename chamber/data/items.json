@@ -1,19 +1,19 @@
 {
     "item1": {
       "Image": "https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/chamber/images/popayan7.webp",
-      "Name": "Popayán Historical Zone",
+      "Name": "Historical Zone of Popayan",
       "Address": "Calle 5 #10-12, Popayán, Colombia",
       "Description": "This area is known for its rich history and colonial architecture. It is an ideal place to stroll and enjoy the architectural and cultural beauty of the city."
     },
     "item2": {
       "Image": "https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/chamber/images/popayan8.webp",
-      "Name": "Popayán Demographics",
+      "Name": "Demographics dates",
       "Address": "Calle 7 #15-20, Popayán, Colombia",
       "Description": "This section provides detailed information about the population of Popayán, including data on age, gender, occupation, and other demographic aspects."
     },
     "item3": {
       "Image": "https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/chamber/images/popayan1.webp",
-      "Name": "Popayán Characteristics",
+      "Name": "Characteristics of Popayan",
       "Address": "Calle 9 #25-30, Popayán, Colombia",
       "Description": "The physical and cultural characteristics of Popayán, such as its climate, flora, fauna, and local traditions, are described here."
     },
