@@ -74,6 +74,10 @@ h1{
     margin: 0; 
 }
 
+.container{
+   
+}
+
 
 
 footer{
@@ -91,6 +95,13 @@ footer p{
     margin: 0;
    
 
+}
+.socialimg{
+    height: 70px ;
+    height: 70px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 
