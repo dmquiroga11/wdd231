@@ -98,7 +98,7 @@ ul li a{
     border: solid black;
     margin: 8px;
     border-radius: 10px;
-
+    font-family: var(--family-font1);
     grid-template-areas:
     "img title"
     "img description"
@@ -137,6 +137,7 @@ ul li a{
     bottom: 130px;
     justify-self: center;
     right: 30%;
+    font-family: var(--family-font1);
 }
 
 .card p {
@@ -147,6 +148,7 @@ ul li a{
     position: relative;
     bottom:130px;
     font-size: 20px;
+    font-family: var(--family-font1);
 }
 
 .card button {
@@ -275,6 +277,7 @@ ul li a{
         "img address"
         "button";
         justify-items: center;
+        font-family: var(--family-font1);
     }
 
     .card h2 {
@@ -306,6 +309,7 @@ ul li a{
         font-size: 20px;
         bottom: 200px;
         right: 180px;
+        font-family: var(--family-font1);
     }
 
     .card address {
@@ -318,6 +322,7 @@ ul li a{
         position: relative;
         bottom: 100px;
         right:320px;
+        font-family: var(--family-font1);
     }
 
     .card button {
@@ -471,7 +476,7 @@ ul li a{
         margin: 8px;
         border-radius: 10px;
         justify-content: center;
- 
+        font-family: var(--family-font1); 
         grid-template-areas:
         "title"
         "img"
@@ -516,6 +521,7 @@ ul li a{
         font-size: 20px;
         left: 10%;
         bottom:40px;
+        font-family: var(--family-font1);
     }
     
     .card address {
@@ -529,7 +535,7 @@ ul li a{
         justify-self: center;
         left: 1%;
         bottom:45px;
-       
+        font-family: var(--family-font1);       
     }
     
    
