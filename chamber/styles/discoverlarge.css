@@ -40,7 +40,8 @@ ul li a{
     color: var(--secondary-color);
     background-color: var(--tertiary-color);       
     font-size: 30px;
-    border-radius: 2px;     
+    border-radius: 2px;   
+    
 }
 .menu button {
 	padding: 0.5rem;
