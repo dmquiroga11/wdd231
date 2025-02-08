@@ -83,6 +83,7 @@ ul li a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
+  
 }
 
 .card {
@@ -91,9 +92,10 @@ ul li a{
     grid-template-rows: auto auto auto auto;
     gap: 10px;
     width: 700px;
-    height: auto;
+    height: 300px;
     border: solid black;
     margin: 8px;
+    border-radius: 10px;
 
     grid-template-areas:
     "img title"
@@ -108,13 +110,9 @@ ul li a{
     height: 50px;
     width: 450px;
     justify-content: left;
-    position: relative;
-    
-    color: var(--tertiary-color);
-    position: relative;
-    right:40px;
-    
-    
+    position: relative;    
+    color: var(--tertiary-color);   
+    right:40px;  
     font-family: var(--family-font1);    
     text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.5); 
        
@@ -165,26 +163,39 @@ ul li a{
 
 
 }
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/*@media (min-width: 320px) and (max-width: 500px{
+
+/*--------------------------MAIN----------------------------
+
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------*/
 @media (min-width: 320px) and (max-width: 500px){
-    h1{
-        margin: 0;
-        width: 100%;
-        justify-self: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 40px;
-        margin-top: 30px;
-        margin-bottom: 20px;            
-        height: 50px;
-        align-content: center;
-        color: var(--secondary-color);
-        background-color: var(--primary-color);
-        text-shadow: none;
-           
-    }
+   
     .menu button {
         padding: 0.5rem;
         font-size: 25px;
@@ -256,9 +267,99 @@ ul li a{
     
     
     /*--------------------------MAIN----------------------------*/
-    h2{
-        
-
+    .container {
+        display: grid;  
+        grid-template-columns:auto;      
+        justify-content: center;
+        height: 4500px;
+        width: 100%;
+      
     }
+    
+    .card {
+        display: grid;        
+        gap: 10px;
+        width: 320px;
+        height: 520px;
+        border: solid black;
+        margin: 8px;
+        border-radius: 10px;
+        justify-content: center;
+ 
+        grid-template-areas:
+        "title"
+        "img"
+        "description"
+        "address"
+        " button";
+    }
+    
+    .card h2 {
+        grid-area: title;
+        font-size: 28px;
+        height: 30px;
+        width: 300px;
+        justify-content: center;         
+        color: var(--tertiary-color);         
+        font-family: var(--family-font1);    
+        text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.5); 
+        
+        position: relative;
+        left: 70%;
+           
+    }
+    
+    .card img {
+        grid-area: img;
+        width: 300px;
+        height: 200px;
+        position: relative;
+        top:80px;
+        right:52%;
+    }
+    .card p {
+        grid-area: description;
+        width: 300px;
+        margin: 10px;       
+        position: relative;        
+        font-size: 20px;
+        left: 62%;
+        top:30px;
+    }
+    
+    .card address {
+        grid-area: address;
+        font-size: 16px;
+        width: auto;
+        height: auto;
+        margin: 0;
+        align-self: center;
+        position: relative;        
+        justify-self: center;
+        left: 60%;
+        top:5px;
+       
+    }
+    
+   
+    
+    .card button {
+        grid-area: button;
+        height: 50px;
+        width: 200px;
+        justify-self:center;
+        align-self: center;
+        border-radius: 10px;
+        font-size: 20px;
+        position: relative;
+        left: 60%;   
+        bottom:4px;    
+        
+    }
+    footer{
+        display: grid;
+        height: 400px;
+    }
+    
     
     }
