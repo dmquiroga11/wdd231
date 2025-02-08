@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     
     if (cards) {
         console.log("Element #cards found:", cards); 
+        // Reservar espacio para las tarjetas antes de cargarlas
+        cards.style.minHeight = "500px";  // Ajusta el valor según lo que necesites
     } else {
         console.error("Element #cards not found");
         return; 
@@ -103,6 +105,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     }
 });
+
 
 /*--------------WELCOME MESSAGE---------------------------*/
 const now = Date.now();
