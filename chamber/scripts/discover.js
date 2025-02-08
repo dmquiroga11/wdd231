@@ -1,3 +1,5 @@
+
+
 /*--------------------------MENU-------------------------------*/
 const nav = document.querySelector("#nav");
 const open = document.querySelector("#openmenu");
@@ -21,7 +23,7 @@ function updateTime() {
     currentTime.textContent = now.toLocaleTimeString();
 }
 /*-----------------------CARDS----------------*/
-document.addEventListener("DOMContentLoaded", async () => {
+/*document.addEventListener("DOMContentLoaded", async () => {
     const url = "https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/chamber/data/items.json";
     const cards = document.querySelector("#cards");
     
@@ -57,16 +59,16 @@ document.addEventListener("DOMContentLoaded", async () => {
                 let item = data[key];
                 console.log("Item:", item); 
 
-                /* Card creation */
+                /* Card creation 
                 const card = document.createElement("section");
                 card.classList.add("card");
 
-                /* Title creation */
+                /* Title creation 
                 const title = document.createElement("h2");
                 title.classList.add("itemName");
                 title.textContent = item.Name;
 
-                /* Figure creation for Image */
+                /* Figure creation for Image 
                 const figure = document.createElement("figure");
 
                 const image = document.createElement("img");
@@ -76,24 +78,24 @@ document.addEventListener("DOMContentLoaded", async () => {
 
                 figure.appendChild(image);
 
-                /* Address creation */
+                /* Address creation 
                 const address = document.createElement("address");
                 address.classList.add("itemAddress");
                 address.textContent = item.Address;
 
-                /* Description creation */
+                /* Description creation 
                 const description = document.createElement("p");
                 description.classList.add("itemDescription");
                 description.textContent = item.Description;
 
-                /* Learn More Button creation */
+                /* Learn More Button creation 
                 const button = document.createElement("button");
                 button.textContent = "Learn More";
                 button.addEventListener("click", () => {
                     alert(`More information about ${item.Name}`);
                 });
 
-                /* Append elements to card */
+                /* Append elements to card 
                 card.appendChild(title);
                 card.appendChild(figure);
                 card.appendChild(address);
@@ -107,4 +109,55 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
         }
     }
+});*/
+// Importar el archivo de datos
+import { places } from "../data/items.mjs";
+console.log(places)
+
+// Esperar a que el contenido del documento se haya cargado completamente
+document.addEventListener("DOMContentLoaded", () => {
+    const cardsContainer = document.querySelector("#cards");
+
+    if (cardsContainer) {
+        console.log("Element #cards found:", cardsContainer); 
+    } else {
+        console.error("Element #cards not found");
+        return; 
+    }
+
+    // Función para crear una tarjeta HTML
+    function createCard(place) {
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        const img = document.createElement("img");
+        img.src = place.Image;
+        img.alt = place.Name;
+        card.appendChild(img);
+
+        const name = document.createElement("h3");
+        name.textContent = place.Name;
+        card.appendChild(name);
+
+        const address = document.createElement("p");
+        address.textContent = place.Address;
+        card.appendChild(address);
+
+        const description = document.createElement("p");
+        description.textContent = place.Description;
+        card.appendChild(description);
+
+        return card;
+    }
+
+    // Función para mostrar las tarjetas en el contenedor
+    function displayItems(places) {
+        places.forEach(place => {
+            const card = createCard(place);
+            cardsContainer.appendChild(card);
+        });
+    }
+
+    // Llamar a la función para mostrar las tarjetas
+    displayItems(places);
 });
