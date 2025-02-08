@@ -71,6 +71,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 image.setAttribute("src", item.Image);
                 image.setAttribute("alt", `Image of ${item.Name}`);
                 image.setAttribute("loading", "lazy");
+                image.setAttribute("width", "300"); 
+                image.setAttribute("height", "200"); 
                 figure.appendChild(image);
 
                 const address = document.createElement("address");
@@ -101,6 +103,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     }
 });
+
 /*--------------WELCOME MESSAGE---------------------------*/
 const now = Date.now();
 const lastVisit = localStorage.getItem('lastVisit');
