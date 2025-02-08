@@ -43,17 +43,8 @@ ul li a{
     border-radius: 2px;   
     
 }
-.menu button {
-	padding: 0.5rem;
-	font-size: 25px;
-    margin: 10px;
-    font-family: var(--family-font1);
-}
-.box2{
-    display: grid;  
-    align-items: center;
-    height: 120px;
-}
+
+
 .nav{
     display: flex;   
     height: 100px;
@@ -217,17 +208,7 @@ ul li a{
         font-size: 30px;
         border-radius: 2px;     
     }
-    .menu button {
-        padding: 0.5rem;
-        font-size: 25px;
-        margin: 10px;
-        font-family: var(--family-font1);
-    }
-    .box2 {
-        display: grid;  
-        align-items: center;
-        height: 120px;
-    }
+    
     .nav {
         display: flex;   
         height: 100px;
