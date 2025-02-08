@@ -103,5 +103,12 @@ footer p{
     border-radius: 50%;
     object-fit: cover;
 }
+.message { 
+   
+    border: solid black;   
+    justify-self: center;
+    color: rgb(170, 6, 6);
+}
+
 
 

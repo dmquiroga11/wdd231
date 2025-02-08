@@ -101,4 +101,28 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     }
 });
+/*--------------WELCOME MESSAGE---------------------------*/
+const now = Date.now();
+const lastVisit = localStorage.getItem('lastVisit');
+const welcomeMessageElement = document.getElementById('welcomeMessage');
+
+    if (!lastVisit) {
+        welcomeMessageElement.innerHTML = "Welcome! Let us know if you have any questions.";
+    } else {
+        
+        const millisecondsInOneDay = 24 * 60 * 60 * 1000;
+        const daysBetweenVisits = Math.floor((now - lastVisit) / millisecondsInOneDay);
+
+        if (daysBetweenVisits < 1) {
+            
+            welcomeMessageElement.innerHTML = "Back so soon! Awesome!";
+        } else {
+            
+            const dayText = daysBetweenVisits === 1 ? 'day' : 'days';
+            welcomeMessageElement.innerHTML = `You last visited n days ago. ${daysBetweenVisits} ${dayText}.`;
+        }
+    }    
+    localStorage.setItem('lastVisit', now);
+
+
 

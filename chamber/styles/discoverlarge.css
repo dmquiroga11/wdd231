@@ -160,6 +160,21 @@ ul li a{
    right: 40%;
    bottom: 100px;
 }
+.message {   
+    padding: 10px;
+    border: solid black;
+    margin: 10px 0;
+    font-size: 40px;
+    
+}
+.card img {
+    transition: transform 0.3s ease; 
+}
+
+.card img:hover {
+    transform: scale(1.2); 
+}
+
 
 
 
@@ -322,6 +337,23 @@ ul li a{
         background-color: var(--primary-color);
         
     }
+    .message {
+   
+        padding: 10px;
+        border: solid black;
+        margin: 10px 0;
+        font-size: 40px;
+        justify-self: center;
+        
+    }
+    .card img {
+        transition: transform 0.3s ease; 
+    }
+    
+    .card img:hover {
+        transform: scale(1.2); 
+    }
+    
 }
 
 
@@ -517,6 +549,16 @@ ul li a{
     footer{
         display: grid;
         height: 400px;
+    }
+    .message {
+   
+        padding: 10px;
+        border: solid black;
+        margin: 10px 0;
+        font-size: 30px;
+        justify-self: center;
+        
+        
     }
 }
     
