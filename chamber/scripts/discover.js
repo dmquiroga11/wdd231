@@ -110,11 +110,11 @@ function updateTime() {
         }
     }
 });*/
-// Importar el archivo de datos
+
 import { places } from "../data/items.mjs";
 console.log(places)
 
-// Esperar a que el contenido del documento se haya cargado completamente
+
 document.addEventListener("DOMContentLoaded", () => {
     const cardsContainer = document.querySelector("#cards");
 
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return; 
     }
 
-    // Función para crear una tarjeta HTML
+   
     function createCard(place) {
         const card = document.createElement("div");
         card.classList.add("card");
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return card;
     }
 
-    // Función para mostrar las tarjetas en el contenedor
+   
     function displayItems(places) {
         places.forEach(place => {
             const card = createCard(place);
@@ -158,6 +158,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Llamar a la función para mostrar las tarjetas
+    
     displayItems(places);
 });
