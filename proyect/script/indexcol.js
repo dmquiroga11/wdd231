@@ -1,10 +1,10 @@
 /*-----------------IMG CHANGE-----------------*/
 
- const images = [
-        { src: 'C:/Users/Walter Quiroga/OneDrive/Desktop/wdd231/proyect/images/images1.webp', srcsetLarge: 'C:/Users/Walter Quiroga/OneDrive/Desktop/wdd231/proyect week 06/images/images1-large.webp', alt: 'Imagen 1' },        
-        { src: 'C:/Users/Walter Quiroga/OneDrive/Desktop/wdd231/proyect/images/images3.webp', srcsetLarge: 'C:/Users/Walter Quiroga/OneDrive/Desktop/wdd231/proyect week 06/images/images3-large.webp', alt: 'Imagen 3' }
+const images = [
+    { src: 'images/images1.webp', srcsetLarge: 'images/images1-large.webp', alt: 'Imagen 1' },
+    { src: 'images/images3.webp', srcsetLarge: 'images/images3-large.webp', alt: 'Imagen 3' }
 ];
-    
+
 const imageChanger = document.getElementById('imageChanger');
 let currentImageIndex = 0;
 
@@ -16,8 +16,8 @@ function changeImage() {
     imageChanger.querySelector('img').alt = images[currentImageIndex].alt;
 }
 
-
 changeImage();
+
 /*--------------------------MENU-------------------------------*/
 const nav = document.querySelector("#nav");
 const open = document.querySelector("#openmenu");
