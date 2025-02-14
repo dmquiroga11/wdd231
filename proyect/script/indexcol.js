@@ -1,8 +1,8 @@
 /*-----------------IMG CHANGE-----------------*/
 
  const images = [
-        { src: 'C:/Users/Walter Quiroga/OneDrive/Desktop/wdd231/proyect week 06/images/images1.webp', srcsetLarge: 'C:/Users/Walter Quiroga/OneDrive/Desktop/wdd231/proyect week 06/images/images1-large.webp', alt: 'Imagen 1' },        
-        { src: 'C:/Users/Walter Quiroga/OneDrive/Desktop/wdd231/proyect week 06/images/images3.webp', srcsetLarge: 'C:/Users/Walter Quiroga/OneDrive/Desktop/wdd231/proyect week 06/images/images3-large.webp', alt: 'Imagen 3' }
+        { src: 'C:/Users/Walter Quiroga/OneDrive/Desktop/wdd231/proyect/images/images1.webp', srcsetLarge: 'C:/Users/Walter Quiroga/OneDrive/Desktop/wdd231/proyect week 06/images/images1-large.webp', alt: 'Imagen 1' },        
+        { src: 'C:/Users/Walter Quiroga/OneDrive/Desktop/wdd231/proyect/images/images3.webp', srcsetLarge: 'C:/Users/Walter Quiroga/OneDrive/Desktop/wdd231/proyect week 06/images/images3-large.webp', alt: 'Imagen 3' }
 ];
     
 const imageChanger = document.getElementById('imageChanger');
