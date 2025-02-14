@@ -1,8 +1,8 @@
 /*-----------------IMG CHANGE-----------------*/
 
 const images = [
-    { src: 'images/images1.webp', srcsetLarge: 'images/images1-large.webp', alt: 'Imagen 1' },
-    { src: 'images/images3.webp', srcsetLarge: 'images/images3-large.webp', alt: 'Imagen 3' }
+    { src: 'https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/proyect/images/images1.webp', srcsetLarge: 'https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/proyect/images/images1-large.webp', alt: 'Imagen 1' },
+    { src: 'https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/proyect/images/images3.webp', srcsetLarge: 'https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/proyect/images/images3-large.webp', alt: 'Imagen 3' }
 ];
 
 const imageChanger = document.getElementById('imageChanger');
@@ -15,6 +15,9 @@ function changeImage() {
     imageChanger.querySelector('img').src = images[currentImageIndex].src;
     imageChanger.querySelector('img').alt = images[currentImageIndex].alt;
 }
+
+changeImage();
+
 
 changeImage();
 
