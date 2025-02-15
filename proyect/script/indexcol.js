@@ -149,10 +149,12 @@ function showGastronomy() {
   
   window.data.foods.forEach(food => {
       const foodHtml = `
-          <div class="food-item">
-              <h3>${food.name}</h3>
-              <img src="${food.image}" alt="${food.name}">
-              <p>${food.description}</p>
+          <div class="divfoodfest">
+            <img src="${food.image}" alt="${food.name}">
+            <div>
+             <h3>${food.name}</h3>              
+             <p>${food.description}</p>
+            </div>
           </div>
       `;
       contentElement.insertAdjacentHTML('beforeend', foodHtml);
@@ -165,10 +167,10 @@ function showFestivities() {
   
   window.data.festivities.forEach(festivity => {
       const festivityHtml = `
-          <div>              
+          <div class="divfoodfest">              
               <img src="${festivity.image}" alt="${festivity.name}">
               <div>
-                <h3 class"nameforeach">${festivity.name}</h3>
+                <h3>${festivity.name}</h3>
                 <p>${festivity.description}</p>
               </div>
           </div>
@@ -178,5 +180,45 @@ function showFestivities() {
 }
 
 fetchData();
+/*-------------THANKS PAGE----------------*/
+function handleSubmit(event) {
+  event.preventDefault();
+
+  const form = document.getElementById('tripForm');
+  const formData = new FormData(form);
+
+  // Get current timestamp
+  const timestamp = new Date().toLocaleString();
+
+  // Store the form data in local storage
+  localStorage.setItem('name', formData.get('name'));
+  localStorage.setItem('email', formData.get('email'));
+  localStorage.setItem('phone', formData.get('phone'));
+  localStorage.setItem('tripType', formData.get('tripType'));
+  localStorage.setItem('duration', formData.get('duration'));
+  localStorage.setItem('budget', formData.get('budget'));
+  localStorage.setItem('accommodation', formData.get('accommodation'));
+  localStorage.setItem('timestamp', timestamp);
+
+  // Redirect to thank you page
+  window.location.href = 'thank-you.html';
+}
+
+// On thank you page, retrieve and display the stored data
+if (window.location.pathname.includes('thank-you.html')) {
+  document.getElementById('display-name').textContent = localStorage.getItem('name');
+  document.getElementById('display-email').textContent = localStorage.getItem('email');
+  document.getElementById('display-phone').textContent = localStorage.getItem('phone');
+  document.getElementById('display-tripType').textContent = localStorage.getItem('tripType');
+  document.getElementById('display-duration').textContent = localStorage.getItem('duration');
+  document.getElementById('display-budget').textContent = localStorage.getItem('budget');
+  document.getElementById('display-accommodation').textContent = localStorage.getItem('accommodation');
+  document.getElementById('display-timestamp').textContent = localStorage.getItem('timestamp');
+}
+
+
+
+
+
 
  

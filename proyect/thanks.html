@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style/thanks.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="script/indexcol.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="box1">
+            <img  src="images/logo.webp"  class="logo"   alt="colombia logo">
+            <div>            
+                <button id="openmenu" class="open">&#9776;</button>
+                <nav class="nav" id="nav">
+                    <button id="closemenu" class="close">&times;</button>
+                    <ul class="startlink">
+                        <li><a class="alink" href="">Discovering Colombia</a></li>
+                        <li><a class="alink" href="">Exploring Colombia</a></li>
+                        <li><a class="alink" href="">Enjoy colombia</a></li>
+                    </ul>
+                    
+                </nav>             
+            </div>
+        
+        </div>
+        
+    </header>
+
+    <div class="thankyou-message">
+        <h2>Thank you for completing the form!</h2>
+        <p>The information you provided is as follows:</p>
+        <p><strong>Name:</strong> <span id="display-name"></span></p>
+        <p><strong>Email:</strong> <span id="display-email"></span></p>
+        <p><strong>Phone Number:</strong> <span id="display-phone"></span></p>
+        <p><strong>Type of Trip:</strong> <span id="display-tripType"></span></p>
+        <p><strong>Duration of Trip:</strong> <span id="display-duration"></span></p>
+        <p><strong>Approximate Budget:</strong> <span id="display-budget"></span></p>
+        <p><strong>Type of Accommodation:</strong> <span id="display-accommodation"></span></p>
+        <p><strong>Timestamp:</strong> <span id="display-timestamp"></span></p>
+    </div>
+    
+
+  <footer>        
+    <div class="boxfoot1">
+        <p>WDD 231 Class Project</p>            
+        <p>Diana Quiroga</p>
+    </div>
+    <div class="socialfooter">
+        <div class="socialcont">
+            <img src="images/facebook.webp" alt="social icon 1" class="socialimg" loading="lazy">
+            <img src="images/twitter.webp" alt="social icon 2" class="socialimg" loading="lazy">
+            <img src="images/youtube.webp" alt="social icon 3" class="socialimg" loading="lazy">            
+        </div>     
+        <nav><a class="reference" href="" target="_blank">Reference Page</a></nav>   
+        
+    </div> 
+    <div class="box2foot">
+        <p>Last modification: </p>            
+        <span id="lastModified"></span>
+        <p><span id="currentTime"></span></p>
+    </div>  
+    
+
+</footer>     
+</body>
+</html>

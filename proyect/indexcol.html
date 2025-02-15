@@ -60,16 +60,16 @@
     <main >  
         <h1>!Visit Colombia: the destination that has it all¡</h1>
         <div>
-          <picture id="imageChanger">
-            <source media="(min-width: 800px)" srcset="">
-            <source media="(min-width: 500px)" srcset="">
-            <img src="" alt="" class="mainpimg">
-        </picture>
-        
+            <picture id="imageChanger">
+                <source media="(min-width: 800px)" srcset="">
+                <source media="(min-width: 500px)" srcset="">
+                <img src="" alt="" class="mainpimg">
+            </picture>
+            
             <p class="par1"> Explore Colombia: a paradise of unique landscapes and unforgettable experiences. With 2 oceans, a variety of foods, cultures and destinations, Colombia is a treasure trove of natural wonders and unique culinary experiences.</p>
             <p class="par2">¡Come and visit it, here the magic begins with you!</p>
             <div class="container">                
-                <form action="thankyou.html" method="get">
+                <form id="tripForm" onsubmit="handleSubmit(event)">
                     <h2 class="formname">Your Next Adventure Starts Here:</h2>
                   
                     <div class="membapli">
@@ -89,7 +89,7 @@
                   
                     <div class="membapli">
                       <label for="level"><strong>Type of Trip::</strong></label>
-                      <select id="level" name="level" required class="choice">
+                      <select id="tripType" name="tripType" required class="choice">
                         <option value="">Choose one...</option>
                         <option value="adventure">Adventure</option>
                         <option value="cultural">Cultural</option>
@@ -100,7 +100,7 @@
                   
                     <div class="membapli">
                         <label for="level"><strong>Duration of Trip::</strong></label>
-                        <select id="level" name="level" required class="choice">
+                        <select id="duration" name="duration" required class="choice">
                           <option value="">Choose one...</option>
                           <option value="weekend">Weekend</option>
                           <option value="one">One week</option>
@@ -110,7 +110,7 @@
                       </div>
                       <div class="membapli">
                         <label for="level"><strong>Approximate Budget:</strong></label>
-                        <select id="level" name="level" required class="choice">
+                        <select id="budget" name="budget" required class="choice">
                           <option value="">Choose one...</option>
                           <option value="five">Less than $500</option>
                           <option value="hundred">$500 - $1000</option>
@@ -120,7 +120,7 @@
                       </div>
                       <div class="membapli">
                         <label for="level"><strong>Type of Accommodation:</strong></label>
-                        <select id="level" name="level" required class="choice">
+                        <select id="accommodation" name="accommodation" required class="choice">
                           <option value="">Choose one...</option>
                           <option value="hotel">Hotel</option>
                           <option value="hostel">Hostel</option>
@@ -139,6 +139,8 @@
         </div>  
         
     </main>
+    
+
     <footer>        
             <div class="boxfoot1">
                 <p>WDD 231 Class Project</p>            

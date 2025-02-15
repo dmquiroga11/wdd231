@@ -1,0 +1,171 @@
+:root{
+    --primary-color: #026c5c;
+    --secondary-color:#25f993;
+    --tertiary-color:#000000; 
+    --quaternary-color:#ffffff; 
+    --fifthy-color:#FFFF99 ;
+    --font-family1: "Roboto", sans-serif;
+}
+
+
+
+
+/*--------HEADER--------*/
+.logo{
+    width: 150px;
+    height: 100px;
+    position: relative;
+    top: 0.5px;
+   
+}
+/*----menu----*/
+.open,.close{
+    display: none;
+}
+
+ul li a{
+    text-decoration: none; 
+    font-family: var(--family-font1);
+    color:var(--fifthy-color);          
+    font-size: 25px;
+    border-radius: 2px;    
+    border: solid var(--secondary-color); 
+    border-radius: 5px;
+    padding: 0.2rem;
+    
+}
+ a:hover{
+    background-color: rgb(4, 173, 207);
+}
+.menu button {
+	padding: 0.5rem;
+	font-size: 25px;
+    margin: 10px;
+    font-family: var(--family-font1);
+}
+.box2{
+    display: grid;  
+    align-items: center;
+    height: 120px;
+}
+.nav{
+    display: flex;   
+    height: 100px;
+    width: 1370px;  
+   
+    
+    
+}
+
+/*---Header links---*/
+.startlink {
+    list-style-type: none;     
+    margin: 50px;    
+    width: 300px;
+    display: flex;
+    text-align: center;    
+    width: 1200px;
+    justify-content: center;    
+    gap:200px;
+   
+
+}
+
+/*-------MAIN-----*/
+.icon{
+    width: 110px;
+    height: 110px;
+    position: relative; 
+         
+}
+
+footer{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+   justify-content: center;
+   justify-content: space-around;
+    font-size: 25px;
+    font-family: var(--family-font1);  
+    color: var(--fifthy-color); 
+}
+
+.socialfooter{
+    display: grid;
+    justify-content: center;
+ 
+}
+.socialfooter nav{
+    justify-self: center;
+}
+
+.socialcont{
+    display:flex;   
+    
+}
+footer p{
+    margin: 0;
+}
+.boxfoot1{
+    justify-items: center;
+    position: relative;
+   top: 35px;
+}
+.box2foot{
+    display: grid;
+    align-self: center;
+}
+.box1{
+    display: flex;
+    background-color: var(--primary-color);
+
+}
+
+/*--------------------MAIN--------------------------*/
+.thankyou-message{
+    text-align: center;
+    font-size: 25px;
+    color: var(--tertiary-color);
+   
+}
+
+
+
+/*----------SOCIAL MEDIA----------*/
+.socialimg{
+    height: 90px ;
+    height: 90px;
+    background-color: var(--quaternary-color);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+     margin-left: 45px;
+}
+
+.reference{
+    font-size: 25px;
+    color:var(--fifthy-color);
+    justify-self: center;
+    text-shadow: 
+    1.5px 1.5px 0px black, 
+    -1.5px 1.5px 0px black, 
+    1.5px -1.5px 0px black, 
+    -1.5px -1.5px 0px black;
+    
+}
+
+    .socialimg {
+        transition: transform 0.3s; 
+    }
+    .socialimg:hover {
+        transform: scale(1.5); 
+    }
+
+.box1foot { 
+    justify-items: center;  
+    text-shadow: 
+    1.5px 1.5px 0px black, 
+    -1.5px 1.5px 0px black, 
+    1.5px -1.5px 0px black, 
+    -1.5px -1.5px 0px black;
+}

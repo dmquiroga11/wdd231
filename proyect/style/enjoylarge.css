@@ -151,27 +151,30 @@ button {
 button:hover {
     background-color: var(--primary-color);
 }
-
-#content {
-    margin-top: 20px;
+.containerfestfood{
+    
 }
 
-.food-item, .festivity-item {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    text-align: center;
+.divfoodfest{
+   
+    font-size: 25px;
+    justify-content: center;
+    border: solid var(--primary-color);
+    width:1200;
+    margin:10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
 }
-
-.food-item img, .festivity-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.divfoodfest p{
+    width: 300px;
+    
 }
-
-.food-item h3, .festivity-item h3 {
-    margin-top: 10px;
+.divfoodfest img{
+    width: 300px;
+    height: 200px;
+    justify-self: center;
+    
 }
 .gastrobotton{
     font-size: 30px;
