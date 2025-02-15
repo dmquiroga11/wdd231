@@ -187,10 +187,9 @@ function handleSubmit(event) {
   const form = document.getElementById('tripForm');
   const formData = new FormData(form);
 
-  // Get current timestamp
+  
   const timestamp = new Date().toLocaleString();
 
-  // Store the form data in local storage
   localStorage.setItem('name', formData.get('name'));
   localStorage.setItem('email', formData.get('email'));
   localStorage.setItem('phone', formData.get('phone'));
@@ -200,11 +199,11 @@ function handleSubmit(event) {
   localStorage.setItem('accommodation', formData.get('accommodation'));
   localStorage.setItem('timestamp', timestamp);
 
-  // Redirect to thank you page
+ 
   window.location.href = 'thank-you.html';
 }
 
-// On thank you page, retrieve and display the stored data
+
 if (window.location.pathname.includes('thank-you.html')) {
   document.getElementById('display-name').textContent = localStorage.getItem('name');
   document.getElementById('display-email').textContent = localStorage.getItem('email');
