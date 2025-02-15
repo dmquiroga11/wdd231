@@ -84,6 +84,9 @@ ul li a{
     border-radius: 10px;
     margin-bottom: 15px;
 }
+main{
+    height: 3760px;
+}
 
 /*----IMAGE/PHARAGRAP--*/
 .sub-container1{
@@ -103,7 +106,25 @@ ul li a{
     font-family: var(--family-font1);
     font-size: 20px;
     margin-left: 15px ;
+    
 }
+.dialog-container{
+    display: flex;
+}
+dialog h2{
+    
+    height: 50px;
+    margin:5px;
+}
+.dialog1{
+    width:70px;
+    background-color: aqua;
+}
+.dialog2{
+    width: 500px;
+}
+
+
 
 h1{   
     font-size: 70px;

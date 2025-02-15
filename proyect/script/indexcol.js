@@ -42,3 +42,18 @@ function updateTime() {
     const now = new Date();
     currentTime.textContent = now.toLocaleTimeString();
 }
+
+/*----------EXPLORE PAGE----------------*/
+document.querySelectorAll('.modal-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const modalId = this.getAttribute('href');
+      document.querySelector(modalId).showModal();
+    });
+  });
+
+  document.querySelectorAll('dialog button').forEach(button => {
+    button.addEventListener('click', function () {
+      this.parentElement.close();
+    });
+  });
