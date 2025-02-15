@@ -90,7 +90,7 @@ h1{
     1px -1px 0px black, 
     -1px -1px 0px black;
 }
-.mainh2{
+.mainh2, .gastroh3{
     background-color: var(--primary-color);
     color: var(--fifthy-color);
     text-shadow: 
@@ -102,6 +102,14 @@ h1{
     font-size: 40px;
     text-align:center ;
     align-content: center;
+}
+.nameforeach{
+    font-size: 15px;
+    font-family: var(--family-font1);
+}
+.festivity-item div{
+    display: flex;
+   
 }
 
 .city-weather{
@@ -164,6 +172,18 @@ button:hover {
 
 .food-item h3, .festivity-item h3 {
     margin-top: 10px;
+}
+.gastrobotton{
+    font-size: 30px;
+   padding: 2rem;
+   position: relative;
+   left:33%;
+   text-shadow: 
+    1px 1px 0px black, 
+    -1px 1px 0px black, 
+    1px -1px 0px black, 
+    -1px -1px 0px black;
+    color: var(--primary-color);
 }
 
 

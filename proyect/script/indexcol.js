@@ -133,8 +133,9 @@ cities.forEach(city => {
 
 /*---------------------------Gastronomy and Festivities----------------------------------*/
 async function fetchData() {
+   const datacol = "https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/proyect/data.json"
   try {
-      const response = await fetch('data.json');
+      const response = await fetch(datacol);
       const data = await response.json();
       window.data = data;
   } catch (error) {
@@ -144,7 +145,7 @@ async function fetchData() {
 
 function showGastronomy() {
   const contentElement = document.getElementById('content');
-  contentElement.innerHTML = '<h3>Gastronomía Típica</h3>';
+  contentElement.innerHTML = '<h3 class="gastroh3">Typical gastronomy</h3>';
   
   window.data.foods.forEach(food => {
       const foodHtml = `
@@ -160,14 +161,16 @@ function showGastronomy() {
 
 function showFestivities() {
   const contentElement = document.getElementById('content');
-  contentElement.innerHTML = '<h3>Principales Festividades</h3>';
+  contentElement.innerHTML = '<h3 class="gastroh3">Main Festivities</h3>';
   
   window.data.festivities.forEach(festivity => {
       const festivityHtml = `
-          <div class="festivity-item">
-              <h3>${festivity.name}</h3>
+          <div>              
               <img src="${festivity.image}" alt="${festivity.name}">
-              <p>${festivity.description}</p>
+              <div>
+                <h3 class"nameforeach">${festivity.name}</h3>
+                <p>${festivity.description}</p>
+              </div>
           </div>
       `;
       contentElement.insertAdjacentHTML('beforeend', festivityHtml);
