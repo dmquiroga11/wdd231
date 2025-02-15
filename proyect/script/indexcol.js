@@ -200,11 +200,11 @@ function handleSubmit(event) {
   localStorage.setItem('timestamp', timestamp);
 
  
-  window.location.href = 'thank-you.html';
+  window.location.href = 'thanks.html';
 }
 
 
-if (window.location.pathname.includes('thank-you.html')) {
+if (window.location.pathname.includes('thanks.html')) {
   document.getElementById('display-name').textContent = localStorage.getItem('name');
   document.getElementById('display-email').textContent = localStorage.getItem('email');
   document.getElementById('display-phone').textContent = localStorage.getItem('phone');
