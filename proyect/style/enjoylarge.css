@@ -72,6 +72,99 @@ ul li a{
 }
 
 /*-------MAIN-----*/
+.icon{
+    width: 110px;
+    height: 110px;
+    position: relative; 
+         
+}
+h1{   
+    font-size: 70px;
+    text-align: center;
+    color: rgb(1, 1, 56);
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-shadow: 
+    1px 1px 0px black, 
+    -1px 1px 0px black, 
+    1px -1px 0px black, 
+    -1px -1px 0px black;
+}
+.mainh2{
+    background-color: var(--primary-color);
+    color: var(--fifthy-color);
+    text-shadow: 
+    1px 1px 0px black, 
+    -1px 1px 0px black, 
+    1px -1px 0px black, 
+    -1px -1px 0px black;
+    height: 80px;
+    font-size: 40px;
+    text-align:center ;
+    align-content: center;
+}
+
+.city-weather{
+    width: 400px;
+    background-color:var(--secondary-color);
+    margin: 10px;
+    text-align: center;
+    padding: 0.5rem;
+    border: solid var(--primary-color);
+    border-radius: 20px;
+    display: flex;
+}
+.foremain{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    
+}
+.box1weather{
+    display: grid;
+}
+.forecast{
+    
+    width: 200px;
+    border: solid var(--primary-color);
+    margin-right: 12px;
+    border-radius: 30px;
+}
+
+
+button {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+#content {
+    margin-top: 20px;
+}
+
+.food-item, .festivity-item {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.food-item img, .festivity-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.food-item h3, .festivity-item h3 {
+    margin-top: 10px;
+}
 
 
 footer{

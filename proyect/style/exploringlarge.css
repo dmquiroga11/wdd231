@@ -88,6 +88,7 @@ main{
     height: 3760px;
 }
 
+
 /*----IMAGE/PHARAGRAP--*/
 .sub-container1{
     display: flex;
@@ -110,11 +111,32 @@ main{
 }
 .dialog-container{
     display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    font-size: 20px;   
+
 }
+.moddep{
+    border: solid var(--primary-color);
+    border-radius: 5px;
+    padding: 1rem;
+
+}
+
 dialog h2{
-    
+    width:410px;
     height: 50px;
-    margin:5px;
+    margin:0;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--fifthy-color);
+    text-shadow: 
+    1px 1px 0px black, 
+    -1px 1px 0px black, 
+    1px -1px 0px black, 
+    -1px -1px 0px black;
+    align-content: center;
+   
 }
 .dialog1{
     width:70px;
@@ -123,6 +145,52 @@ dialog h2{
 .dialog2{
     width: 500px;
 }
+button{
+    font-size: 20px;
+    margin:10px;
+    width: 400px;
+    font-family: var(--family-font1);
+    position: relative;
+    left:30%;
+    border-radius: 10px;
+    
+}
+button:hover{
+    background-color:var(--secondary-color);
+}
+.modal-link{
+    font-size: 25px;
+    text-decoration: none;
+    border: solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--fifthy-color);
+    text-shadow: 
+    1px 1px 0px black, 
+    -1px 1px 0px black, 
+    1px -1px 0px black, 
+    -1px -1px 0px black;
+    position: relative;
+    bottom:100px;
+    left: 30%;
+    padding: 1rem;
+    border-radius: 20px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.region-image {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+
+
 
 
 
@@ -138,7 +206,7 @@ h1{
     1px -1px 0px black, 
     -1px -1px 0px black;
 }
-h2{
+.sub-container h2{
     font-size: 40px;
     text-align: center;
     background-color: var(--primary-color);

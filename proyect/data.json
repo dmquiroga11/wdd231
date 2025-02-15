@@ -1,0 +1,66 @@
+{
+    "foods": [
+    {
+    "name": "Ajiaco",
+    "description": "A delicious chicken broth with potatoes, corn and guascas, typical of Bogotá.",
+    "image": "images/ajiaco.jpg"
+    },
+    {
+    "name": "Bandeja Paisa",
+    "description": "A typical dish from Antioquia that includes rice, beans, ground beef, pork rinds, ripe plantain, fried egg, arepa and avocado.",
+    "image": "images/bandeja_paisa.jpg"
+    },
+    {
+    "name": "Sancocho",
+    "description": "A traditional soup made with meat (beef, chicken or fish), yuca, plantain, potatoes and corn.",
+    "image": "images/sancocho.jpg"
+    },
+    {
+    "name": "Arepas",
+    "description": "Corn tortillas that can be filled or accompanied with cheese, butter, hogao or other ingredients.",
+    "image": "images/arepas.jpg"
+    },
+    {
+    "name": "Empanadas",
+    "description": "Corn dough filled with meat, potato and other ingredients, fried until crispy.",
+    "image": "images/empanadas.jpg"
+    },
+    {
+    "name": "Patacones",
+    "description": "Fried green plantain that is flattened and fried again, ideal to accompany main dishes.",
+    "image": "images/patacones.jpg"
+    }
+    ],
+    "festivities": [
+    {
+    "name": "Carnival of Barranquilla",
+    "description": "One of the largest festivals in Colombia, known for its parades, costumes and music.",
+    "image": "images/carnaval_barranquilla.jpg"
+    },
+    {
+    "name": "Feria de Cali",
+    "description": "An annual event that celebrates the culture caleña with salsa, concerts and sporting events.",
+    "image": "images/feria_cali.jpg"
+    },
+    {
+    "name": "Vallenato Festival",
+    "description": "A festival dedicated to vallenato music, held every year in Valledupar.",
+    "image": "images/festival_vallenato.jpg"
+    },
+    {
+    "name": "Festival de Blancos y Negros",
+    "description": "A festival that celebrates the cultural diversity of southern Colombia, especially in Pasto.",
+    "image": "images/festival_blancos_negros.jpg"
+    },
+    {
+    "name": "Feria de Manizales",
+    "description": "A traditional fair that includes bullfights, parades and cultural events.",
+    "image": "images/feria_manizales.jpg"
+    },
+    {
+    "name": "Ibero-American Theater Festival of Bogotá",
+    "description": "A cultural event that brings together theatre companies from around the world.",
+    "image": "images/festival_teatro.jpg"
+    }
+    ]
+    }
