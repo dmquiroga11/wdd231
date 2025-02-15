@@ -215,10 +215,20 @@ footer p{
     justify-items: center;
     position: relative;
    top: 35px;
+   text-shadow: 
+    1.5px 1.5px 0px black, 
+    -1.5px 1.5px 0px black, 
+    1.5px -1.5px 0px black, 
+    -1.5px -1.5px 0px black;
 }
 .box2foot{
     display: grid;
     align-self: center;
+    text-shadow: 
+    1.5px 1.5px 0px black, 
+    -1.5px 1.5px 0px black, 
+    1.5px -1.5px 0px black, 
+    -1.5px -1.5px 0px black;
 }
 
 /*--------ALL CONTAINER FOOT-----*/

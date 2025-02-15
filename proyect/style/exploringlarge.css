@@ -72,28 +72,81 @@ ul li a{
 }
 
 /*-------MAIN-----*/
+.main-container{
+    display:grid;
+}
+.sub-container{
+    display: grid;    
+    justify-content: center;
+    width: 1300px;
+    justify-self: center;
+    border: solid var(--primary-color);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
 
-h1{
-    position: absolute;
-    top: 90px;
-    z-index: 1px;
-    left: 5%;
+/*----IMAGE/PHARAGRAP--*/
+.sub-container1{
+    display: flex;
+    
+}
+.region-image{
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    margin-left: 45px;
+}
+.sub-container1 p{
+    width: 500px;
+    height: 400px;
+    text-align: justify;
+    font-family: var(--family-font1);
+    font-size: 20px;
+    margin-left: 15px ;
+}
+
+h1{   
     font-size: 70px;
     text-align: center;
     color: rgb(1, 1, 56);
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-shadow: 
+    1px 1px 0px black, 
+    -1px 1px 0px black, 
+    1px -1px 0px black, 
+    -1px -1px 0px black;
 }
-/*hero image*/
-
-
-footer{
+h2{
+    font-size: 40px;
+    text-align: center;
     background-color: var(--primary-color);
+    color: var(--fifthy-color);
+    margin-top: 0;
+    height: 100px;
+    align-content: center;
+    width:1300px;
+    text-shadow: 
+    1.5px 1.5px 0px black, 
+    -1.5px 1.5px 0px black, 
+    1.5px -1.5px 0px black, 
+    -1.5px -1.5px 0px black;
+
+}
+
+
+/*--------ALL CONTAINER FOOT-----*/
+footer{
+    background-color:var(--primary-color);
     padding: 1rem;
     display: flex;
-   justify-content: center;
-   justify-content: space-around;
+    justify-content: center;
+    justify-content: space-around;
     font-size: 25px;
     font-family: var(--family-font1);  
     color: var(--fifthy-color); 
+    height: 150px;
+    width: 1200;
 }
 
 .socialfooter{
@@ -120,9 +173,27 @@ footer p{
 .box2foot{
     display: grid;
     align-self: center;
+    text-shadow: 
+    1.5px 1.5px 0px black, 
+    -1.5px 1.5px 0px black, 
+    1.5px -1.5px 0px black, 
+    -1.5px -1.5px 0px black;
+    
+}
+.box1foot { 
+    justify-items: center;
+    align-content: center; 
+    height: 150px;
+    text-shadow: 
+    1.5px 1.5px 0px black, 
+    -1.5px 1.5px 0px black, 
+    1.5px -1.5px 0px black, 
+    -1.5px -1.5px 0px black;
+     
+    
 }
 
-/*--------ALL CONTAINER FOOT-----*/
+
 
 
 

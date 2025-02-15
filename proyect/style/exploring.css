@@ -1,0 +1,54 @@
+:root{
+    --primary-color: #026c5c;
+    --secondary-color:#25f993;
+    --tertiary-color:#000000; 
+    --quaternary-color:#ffffff; 
+    --fifthy-color:#FFFF99 ;
+    --font-family1: "Roboto", sans-serif;
+}
+
+
+
+/*--all about header--*/
+.box1{
+    display: flex;
+    background-color: var(--primary-color);
+
+}
+
+main{
+    height: 3650px;
+}
+
+/*----------SOCIAL MEDIA----------*/
+.socialimg{
+    height: 90px ;
+    height: 90px;
+    background-color: var(--quaternary-color);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+     margin-left: 45px;
+}
+
+.reference{
+    font-size: 25px;
+    color:var(--fifthy-color);
+    justify-self: center;
+    text-shadow: 
+    1.5px 1.5px 0px black, 
+    -1.5px 1.5px 0px black, 
+    1.5px -1.5px 0px black, 
+    -1.5px -1.5px 0px black;
+    
+}
+
+    .socialimg {
+        transition: transform 0.3s; 
+    }
+    .socialimg:hover {
+        transform: scale(1.5); 
+    }
+
+
+

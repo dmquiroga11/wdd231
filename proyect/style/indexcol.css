@@ -40,6 +40,11 @@
     font-size: 25px;
     color:var(--fifthy-color);
     justify-self: center;
+    text-shadow: 
+    1.5px 1.5px 0px black, 
+    -1.5px 1.5px 0px black, 
+    1.5px -1.5px 0px black, 
+    -1.5px -1.5px 0px black;
     
 }
 
@@ -52,5 +57,10 @@
 
 .box1foot { 
     justify-items: center;  
+    text-shadow: 
+    1.5px 1.5px 0px black, 
+    -1.5px 1.5px 0px black, 
+    1.5px -1.5px 0px black, 
+    -1.5px -1.5px 0px black;
 }
 
