@@ -6,8 +6,12 @@
     --fifthy-color:#FFFF99 ;
     --font-family1: "Roboto", sans-serif;
 }
+/*--all about header--*/
+.box1{
+    display: flex;
+    background-color: var(--primary-color);
 
-
+}
 
  @media (min-width: 1025px){
 /*--------HEADER--------*/
@@ -151,9 +155,7 @@ button {
 button:hover {
     background-color: var(--primary-color);
 }
-.containerfestfood{
-    
-}
+
 
 .divfoodfest{
    
@@ -228,10 +230,34 @@ footer p{
 }
 
 /*--------ALL CONTAINER FOOT-----*/
+/*----------SOCIAL MEDIA----------*/
+.socialimg{
+    height: 90px ;
+    height: 90px;
+    background-color: var(--quaternary-color);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+     margin-left: 45px;
+}
 
+.reference{
+    font-size: 25px;
+    color:var(--fifthy-color);
+    justify-self: center;
+    
+}
 
+    .socialimg {
+        transition: transform 0.3s; 
+    }
+    .socialimg:hover {
+        transform: scale(1.5); 
+    }
 
-
+.box1foot { 
+    justify-items: center;  
+}
 
  }
 
@@ -240,15 +266,305 @@ footer p{
 
 
 
- @media (min-width: 641px) and (max-width: 1024px) {
-/*-----------------------HEADER--------------------*/
-/*------------------------MAIN---------------------*/
-/*-----------------FOOTER---------------------------*/
- }
+ 
 
 
  @media (min-width: 320px) and (max-width: 640px) {
 /*-----------------------HEADER--------------------*/
+h1{
+    margin: 0;
+    width: 100%;
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;             
+    height: 80px;
+    align-content: center;
+    color: var(--fifthy-color);
+    background-color: var(--primary-color);    
+    text-shadow: 
+    1px 1px 0px black, 
+    -1px 1px 0px black, 
+    1px -1px 0px black, 
+    -1px -1px 0px black;     
+    text-align: center;    
+    margin-top: 0;
+    margin-bottom: 5px;
+        
+    
+       
+}
+ul li a{
+    text-decoration: none; 
+    font-family: var(--family-font1);
+    color: var(--fifthy-color); 
+    background-color:var(--primary-color);   
+    font-size: 25px;
+      
+}
+.alink:hover{
+    color: var(--secondary-color);
+   
+}
+
+
+.box2{
+    display: grid;  
+    align-items: center;
+    height: 120px;
+    
+}
+
+.close {
+    display: block;
+    position: absolute;
+    right: 0;
+    padding: 0.2rem;        
+    border: 0;
+    font-size: 4rem;
+    background-color: transparent;
+    color: var(--secondary-color);
+    justify-self: end;
+        
+}
+.open{
+    display: block;
+    position: absolute;
+    right: 0;
+    padding: 2rem;        
+    border: 0;
+    font-size: 3rem;
+    background-color: transparent;
+    color: var(--secondary-color);
+    top: -15px;
+    justify-self: end;
+     
+}
+.nav {
+    display: none;        
+    position: absolute;
+    top: 0;
+    right: 3px;
+    width: 300px;        
+    height: 400px;       
+    visibility: hidden;
+}
+.nav.visible{
+
+    display: grid;    
+    visibility: visible;
+    grid-template-columns: 1fr;
+    background-color:var(--primary-color);
+    z-index: 20;
+   
+}
+
+.startlink {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;    
+    width: 200px;
+    display: grid;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.logo{
+    width: 100px;
+    height: 80px;
+}
+
 /*------------------------MAIN---------------------*/
+.icon{
+    width: 60px;
+    height: 60px;
+    position: relative; 
+         
+}
+.mainh2, .gastroh3{
+    background-color: var(--primary-color);
+    color: var(--fifthy-color);
+    text-shadow: 
+    1px 1px 0px black, 
+    -1px 1px 0px black, 
+    1px -1px 0px black, 
+    -1px -1px 0px black;
+    height: 80px;
+    font-size: 30px;
+    text-align:center ;
+    align-content: center;
+}
+.nameforeach{
+    font-size: 15px;
+    font-family: var(--family-font1);
+}
+.festivity-item div{
+    display: flex;
+   
+}
+
+.city-weather{
+    width: 310px;
+    background-color:var(--secondary-color);
+    margin: 10px;
+    text-align: center;
+    padding: 0.5rem;
+    border: solid var(--primary-color);
+    border-radius: 20px;
+    display: grid;
+}
+.foremain{
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-self: center;
+    
+}
+.box1weather{
+    display: grid;
+}
+.forecast{
+    
+    width: 200px;
+    border: solid var(--primary-color);
+    margin-right: 12px;
+    border-radius: 30px;
+    justify-self: center;
+}
+
+
+button {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--fifthy-color);
+}
+
+
+.divfoodfest{
+   
+    font-size: 25px;
+    justify-content: center;
+    border: solid var(--primary-color);
+    width:300;
+    margin:10px;
+    display: grid;
+    
+    
+}
+.divfoodfest p{
+    width: 300px;
+    text-align: center;
+    
+}
+.divfoodfest img{
+    width: 100px;
+    height: 90px;
+    justify-self: center;
+    margin-top: 10px;
+    
+}
+.gastrobotton{
+    font-size: 30px;
+   padding: 2rem;
+   position: relative;
+   left:33%;
+   text-shadow: 
+    1px 1px 0px black, 
+    -1px 1px 0px black, 
+    1px -1px 0px black, 
+    -1px -1px 0px black;
+    color: var(--primary-color);
+}
+
 /*-----------------FOOTER---------------------------*/
- }
+footer{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    display: grid;
+   justify-content: center;
+   justify-content: space-around;
+    font-size: 20px;
+    font-family: var(--family-font1);  
+    color: var(--fifthy-color); 
+    height: 300px;
+   
+}
+
+.socialfooter{
+    display: grid;
+    justify-content: center;
+ 
+}
+.socialfooter nav{
+    justify-self: center;
+   
+}
+
+.socialcont{
+    display:flex;   
+    
+}
+footer p{
+    margin: 0;
+}
+.boxfoot1{
+    justify-items: center;
+    position: relative;
+   top: 10px;
+   text-shadow: 
+    1.5px 1.5px 0px black, 
+    -1.5px 1.5px 0px black, 
+    1.5px -1.5px 0px black, 
+    -1.5px -1.5px 0px black;
+}
+.box2foot{
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    text-shadow: 
+    1.5px 1.5px 0px black, 
+    -1.5px 1.5px 0px black, 
+    1.5px -1.5px 0px black, 
+    -1.5px -1.5px 0px black;
+}
+/*----------SOCIAL MEDIA----------*/
+.socialimg{
+    height: 60px ;
+    height: 60px;
+    background-color: var(--quaternary-color);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+     margin-left: 45px;
+}  
+
+.box1foot { 
+    justify-items: center;  
+    text-shadow: 
+    1.5px 1.5px 0px black, 
+    -1.5px 1.5px 0px black, 
+    1.5px -1.5px 0px black, 
+    -1.5px -1.5px 0px black;
+}
+.reference{
+    font-size: 20px;
+    color:var(--fifthy-color);
+    justify-self: center;
+    text-shadow: 
+    1.5px 1.5px 0px black, 
+    -1.5px 1.5px 0px black, 
+    1.5px -1.5px 0px black, 
+    -1.5px -1.5px 0px black;
+    margin-bottom: 10px;
+    
+}
+
+}
+ 

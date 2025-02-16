@@ -1,21 +1,27 @@
 /*-----------------IMG CHANGE-----------------*/
 const images = [
-    { src: 'https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/proyect/images/images1.webp', srcsetLarge: 'https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/proyect/images/images1.webp', alt: 'Imagen 1' },
-    { src: 'https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/proyect/images/images3.webp', srcsetLarge: 'https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/proyect/images/images3.webp', alt: 'Imagen 3' }
+  { src: 'https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/proyect/images/images1.webp', srcsetLarge: 'https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/proyect/images/images1.webp', alt: 'Imagen 1' },
+  { src: 'https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/proyect/images/images3.webp', srcsetLarge: 'https://raw.githubusercontent.com/dmquiroga11/wdd231/refs/heads/main/proyect/images/images3.webp', alt: 'Imagen 3' }
 ];
 
 const imageChanger = document.getElementById('imageChanger');
 let currentImageIndex = 0;
 
 function changeImage() {
-    currentImageIndex = Math.floor(Math.random() * images.length);
-    imageChanger.querySelector('source[media="(min-width: 800px)"]').srcset = images[currentImageIndex].srcsetLarge;
-    imageChanger.querySelector('source[media="(min-width: 500px)"]').srcset = images[currentImageIndex].src;
-    imageChanger.querySelector('img').src = images[currentImageIndex].src;
-    imageChanger.querySelector('img').alt = images[currentImageIndex].alt;
+  currentImageIndex = Math.floor(Math.random() * images.length);
+  const imgElement = imageChanger.querySelector('img');
+
+  imageChanger.querySelector('source[media="(min-width: 800px)"]').srcset = images[currentImageIndex].srcsetLarge;
+  imageChanger.querySelector('source[media="(min-width: 500px)"]').srcset = images[currentImageIndex].src;
+  imgElement.src = images[currentImageIndex].src;
+  imgElement.alt = images[currentImageIndex].alt;
+
+  // Añadir la clase específica
+  imgElement.classList.add('mainimg');
 }
 
 document.addEventListener('DOMContentLoaded', changeImage);
+
 
 
 
