@@ -440,6 +440,8 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+   
+
 }
 
 button:hover {
@@ -474,7 +476,7 @@ button:hover {
     font-size: 30px;
    padding: 2rem;
    position: relative;
-   left:33%;
+   left:25%;
    text-shadow: 
     1px 1px 0px black, 
     -1px 1px 0px black, 
