@@ -440,13 +440,10 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-   
 
 }
 
-button:hover {
-    background-color: var(--fifthy-color);
-}
+
 
 
 .divfoodfest{
